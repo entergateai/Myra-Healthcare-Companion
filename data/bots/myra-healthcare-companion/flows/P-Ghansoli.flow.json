@@ -1,0 +1,83 @@
+{
+  "version": "0.0.1",
+  "catchAll": {},
+  "startNode": "entry",
+  "nodes": [
+    {
+      "id": "5a8fd9f7f9",
+      "name": "entry",
+      "onEnter": [
+        "say #!builtin_text-e5V9hC"
+      ],
+      "onReceive": null,
+      "next": [
+        {
+          "condition": "true",
+          "node": "final_choice"
+        }
+      ]
+    },
+    {
+      "id": "218c92e645",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "final_choice",
+      "flow": "skills/choice-c0547b.flow.json",
+      "next": [
+        {
+          "caption": "User picked [got9]",
+          "condition": "temp['skill-choice-ret'] == \"got9\"",
+          "node": "end_final"
+        },
+        {
+          "caption": "User picked [back9]",
+          "condition": "temp['skill-choice-ret'] == \"back9\"",
+          "node": "pick_one"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "fail"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "58e5e2ccaf",
+      "name": "fail",
+      "next": [
+        {
+          "condition": "true",
+          "node": "final_choice"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null
+    },
+    {
+      "id": "a5cc174ac0",
+      "name": "end_final",
+      "next": [
+        {
+          "condition": "true",
+          "node": "End.flow.json"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null
+    },
+    {
+      "id": "3a09fae274",
+      "name": "pick_one",
+      "next": [
+        {
+          "condition": "true",
+          "node": "Pick_one.flow.json"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null
+    }
+  ]
+}

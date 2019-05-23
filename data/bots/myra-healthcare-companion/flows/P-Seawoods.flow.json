@@ -1,0 +1,155 @@
+{
+  "version": "0.0.1",
+  "catchAll": {},
+  "startNode": "entry",
+  "nodes": [
+    {
+      "id": "9fbb982217",
+      "name": "entry",
+      "onEnter": [
+        "say #!builtin_text-WMpiqI"
+      ],
+      "onReceive": null,
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-seawoods"
+        }
+      ]
+    },
+    {
+      "id": "1be985bf60",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "final_choice",
+      "flow": "skills/choice-c0547b.flow.json",
+      "next": [
+        {
+          "caption": "User picked [got9]",
+          "condition": "temp['skill-choice-ret'] == \"got9\"",
+          "node": "end_final"
+        },
+        {
+          "caption": "User picked [back9]",
+          "condition": "temp['skill-choice-ret'] == \"back9\"",
+          "node": "pick_one"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "fail"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "92c24fac06",
+      "name": "fail",
+      "next": [
+        {
+          "condition": "true",
+          "node": "final_choice"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null
+    },
+    {
+      "id": "ad8d7707e1",
+      "name": "end_final",
+      "next": [
+        {
+          "condition": "true",
+          "node": "End.flow.json"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null
+    },
+    {
+      "id": "a5f3084917",
+      "name": "pick_one",
+      "next": [
+        {
+          "condition": "true",
+          "node": "Pick_one.flow.json"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null
+    },
+    {
+      "id": "skill-55bf16",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-seawoods",
+      "flow": "skills/choice-55bf16.flow.json",
+      "next": [
+        {
+          "caption": "User picked [seawood...]",
+          "condition": "temp['skill-choice-ret'] == \"seawoods1\"",
+          "node": "Seawoods_1"
+        },
+        {
+          "caption": "User picked [seawood...]",
+          "condition": "temp['skill-choice-ret'] == \"seawoods2\"",
+          "node": "Seawoods_2"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "node-4ef8"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "75032e6061",
+      "name": "node-4ef8",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-seawoods"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null
+    },
+    {
+      "id": "a25369c091",
+      "name": "Seawoods_1",
+      "next": [
+        {
+          "condition": "true",
+          "node": "final_choice"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-xz4QR5",
+        "say #!builtin_text-CBiTA3",
+        "say #!builtin_text-g2Rjqw",
+        "say #!builtin_text-noR6hw"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "fd3ed6a16b",
+      "name": "Seawoods_2",
+      "next": [
+        {
+          "condition": "true",
+          "node": "final_choice"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-yIWJPK",
+        "say #!builtin_text-uKVWJP",
+        "say #!builtin_text-uFPC5c",
+        "say #!builtin_text-7AzfJE"
+      ],
+      "onReceive": null
+    }
+  ]
+}

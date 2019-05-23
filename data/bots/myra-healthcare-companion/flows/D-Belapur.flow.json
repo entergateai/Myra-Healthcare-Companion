@@ -1,0 +1,348 @@
+{
+  "version": "0.0.1",
+  "catchAll": {},
+  "startNode": "entry",
+  "nodes": [
+    {
+      "id": "aa9cddaf0e",
+      "name": "entry",
+      "onEnter": [
+        "say #!builtin_text-DKRblq"
+      ],
+      "onReceive": null,
+      "next": [
+        {
+          "condition": "true",
+          "node": "type_of_doc"
+        }
+      ]
+    },
+    {
+      "id": "skill-07a9f4",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "type_of_doc",
+      "flow": "skills/choice-07a9f4.flow.json",
+      "next": [
+        {
+          "caption": "User picked [gp]",
+          "condition": "temp['skill-choice-ret'] == \"gp\"",
+          "node": "GP"
+        },
+        {
+          "caption": "User picked [dentist]",
+          "condition": "temp['skill-choice-ret'] == \"dentist\"",
+          "node": "Dentist"
+        },
+        {
+          "caption": "User picked [ortho]",
+          "condition": "temp['skill-choice-ret'] == \"ortho\"",
+          "node": "Ortho"
+        },
+        {
+          "caption": "User picked [vet]",
+          "condition": "temp['skill-choice-ret'] == \"vet\"",
+          "node": "Vet"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "node-ea39"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "2631db5335",
+      "name": "node-ea39",
+      "next": [
+        {
+          "condition": "true",
+          "node": "type_of_doc"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null
+    },
+    {
+      "id": "b19c566db1",
+      "name": "GP",
+      "next": [
+        {
+          "condition": "true",
+          "node": "gp_belapur"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-Gb3hrQ"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "cec8689e2b",
+      "name": "Dentist",
+      "next": [
+        {
+          "condition": "true",
+          "node": "dentist_choice"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-Gb3hrQ"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "330abd3cbf",
+      "name": "Ortho",
+      "next": [
+        {
+          "condition": "true",
+          "node": "End_belapur"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-W1SxdS"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "53afda8c51",
+      "name": "Vet",
+      "next": [
+        {
+          "condition": "true",
+          "node": "Dr.Reddy"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-l7B495"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "d974128cd3",
+      "name": "Dr.Reddy",
+      "next": [
+        {
+          "condition": "true",
+          "node": "End_belapur"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-k2M80e",
+        "say #!builtin_text-axOL0P",
+        "say #!builtin_text-OkEx3C",
+        "say #!builtin_text-CaXxuG"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "skill-eb3f8d",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "End_belapur",
+      "flow": "skills/choice-eb3f8d.flow.json",
+      "next": [
+        {
+          "caption": "User picked [got]",
+          "condition": "temp['skill-choice-ret'] == \"got\"",
+          "node": "node-df86"
+        },
+        {
+          "caption": "User picked [back2]",
+          "condition": "temp['skill-choice-ret'] == \"back2\"",
+          "node": "node-a99a"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "node-be4c"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "a7e0cb7bb3",
+      "name": "node-be4c",
+      "next": [
+        {
+          "condition": "true",
+          "node": "End_belapur"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null
+    },
+    {
+      "id": "c9b72a14a8",
+      "name": "node-df86",
+      "next": [
+        {
+          "condition": "true",
+          "node": "End.flow.json"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null
+    },
+    {
+      "id": "adda6f7f4c",
+      "name": "node-a99a",
+      "next": [
+        {
+          "condition": "true",
+          "node": "Pick_one.flow.json"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null
+    },
+    {
+      "id": "skill-f637b3",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "gp_belapur",
+      "flow": "skills/choice-f637b3.flow.json",
+      "next": [
+        {
+          "caption": "User picked [drgp1]",
+          "condition": "temp['skill-choice-ret'] == \"drgp1\"",
+          "node": "Dr._Nirmal_Nehete"
+        },
+        {
+          "caption": "User picked [drgp2]",
+          "condition": "temp['skill-choice-ret'] == \"drgp2\"",
+          "node": "Dr._B.S_Kaushal"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "node-34b8"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "3edcac27b3",
+      "name": "node-34b8",
+      "next": [
+        {
+          "condition": "true",
+          "node": "gp_belapur"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null
+    },
+    {
+      "id": "b7156db259",
+      "name": "Dr._Nirmal_Nehete",
+      "next": [
+        {
+          "condition": "true",
+          "node": "End_belapur"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-PXgch7",
+        "say #!builtin_text-60Uv58",
+        "say #!builtin_text-ufkXq9",
+        "say #!builtin_text-S8BWFw"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "3ba43a994d",
+      "name": "Dr._B.S_Kaushal",
+      "next": [
+        {
+          "condition": "true",
+          "node": "End_belapur"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-2hUz8x",
+        "say #!builtin_text-0M-10W",
+        "say #!builtin_text-LIJwt6",
+        "say #!builtin_text-mgBExB"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "skill-73d5c2",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "dentist_choice",
+      "flow": "skills/choice-73d5c2.flow.json",
+      "next": [
+        {
+          "caption": "User picked [drden1]",
+          "condition": "temp['skill-choice-ret'] == \"drden1\"",
+          "node": "Dr._Reddy_s_Dental_Clinic"
+        },
+        {
+          "caption": "User picked [drden2]",
+          "condition": "temp['skill-choice-ret'] == \"drden2\"",
+          "node": "SmileOvation_Dental_Clinic"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "node-e9b0"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "bb3a18a6a4",
+      "name": "node-e9b0",
+      "next": [
+        {
+          "condition": "true",
+          "node": "dentist_choice"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null
+    },
+    {
+      "id": "c46fbfa9c2",
+      "name": "Dr._Reddy_s_Dental_Clinic",
+      "next": [
+        {
+          "condition": "true",
+          "node": "End_belapur"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-mfL0Nz",
+        "say #!builtin_text-hhG6vd",
+        "say #!builtin_text-uYGCYJ",
+        "say #!builtin_text-Y9P1sw"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "a8eb1235ad",
+      "name": "SmileOvation_Dental_Clinic",
+      "next": [
+        {
+          "condition": "true",
+          "node": "End_belapur"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-mX5HfU",
+        "say #!builtin_text-ZlqgJ7",
+        "say #!builtin_text-1pDTD2",
+        "say #!builtin_text-1PNn3Z"
+      ],
+      "onReceive": null
+    }
+  ]
+}

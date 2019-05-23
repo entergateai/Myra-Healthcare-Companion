@@ -1,0 +1,88 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "next": []
+  },
+  "startNode": "entry",
+  "skillData": {
+    "contentId": "builtin_single-choice-HseLB9",
+    "keywords": {
+      "sagar_kapse": [
+        "sagar_kapse",
+        "Dr. Sagar Kapse"
+      ],
+      "citysmile": [
+        "citysmile",
+        "City Smiles dentist"
+      ],
+      "back": [
+        "back",
+        "Go back"
+      ]
+    },
+    "config": {}
+  },
+  "nodes": [
+    {
+      "name": "entry",
+      "onEnter": [
+        "say #!builtin_single-choice-HseLB9 {\"skill\":\"choice\"}"
+      ],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "797373"
+    },
+    {
+      "name": "parse",
+      "onReceive": [
+        "basic-skills/choice_parse_answer {\"contentId\":\"builtin_single-choice-HseLB9\",\"keywords\":{\"sagar_kapse\":[\"sagar_kapse\",\"Dr. Sagar Kapse\"],\"citysmile\":[\"citysmile\",\"City Smiles dentist\"],\"back\":[\"back\",\"Go back\"]},\"config\":{}}"
+      ],
+      "next": [
+        {
+          "condition": "temp['skill-choice-valid'] === true",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "invalid"
+        }
+      ],
+      "onEnter": [],
+      "id": "298718"
+    },
+    {
+      "name": "invalid",
+      "onEnter": [
+        "basic-skills/choice_invalid_answer"
+      ],
+      "next": [
+        {
+          "condition": "temp['skill-choice-invalid-count'] <= undefined",
+          "node": "sorry"
+        },
+        {
+          "condition": "true",
+          "node": "#"
+        }
+      ],
+      "id": "471586"
+    },
+    {
+      "name": "sorry",
+      "onEnter": [
+        "say #!builtin_single-choice-HseLB9 {\"skill\":\"choice\"}"
+      ],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "813576"
+    }
+  ]
+}

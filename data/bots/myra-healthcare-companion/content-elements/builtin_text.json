@@ -1,0 +1,1680 @@
+[
+  {
+    "id": "builtin_text-ke-l9Q",
+    "formData": {
+      "text$en": "Hi!!",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-04-29T12:12:39.187Z",
+    "modifiedOn": "2019-04-29T12:12:39.187Z"
+  },
+  {
+    "id": "builtin_text-BkWaJq",
+    "formData": {
+      "text$en": "I'm Myra..",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-04-29T12:13:00.436Z",
+    "modifiedOn": "2019-04-29T12:13:00.436Z"
+  },
+  {
+    "id": "builtin_text-YOW4iu",
+    "formData": {
+      "text$en": "It's a pleasure to meet you",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-04-29T12:13:16.230Z",
+    "modifiedOn": "2019-04-29T12:13:16.230Z"
+  },
+  {
+    "id": "builtin_text-yzlH0C",
+    "formData": {
+      "text$en": "What's your name?",
+      "variations$en": [
+        "What shall I call you"
+      ],
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-04-29T12:14:13.920Z",
+    "modifiedOn": "2019-04-29T12:14:13.920Z"
+  },
+  {
+    "id": "builtin_text-52ZrYk",
+    "formData": {
+      "text$en": "It's a pleasure to  meet you {{user.name}}",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-04-29T12:15:18.836Z",
+    "modifiedOn": "2019-04-29T12:15:18.836Z"
+  },
+  {
+    "id": "builtin_text-LYQ-21",
+    "formData": {
+      "text$en": "You have a new friend",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-04-29T12:18:21.985Z",
+    "modifiedOn": "2019-04-29T12:18:21.985Z"
+  },
+  {
+    "id": "builtin_text-_91YCC",
+    "formData": {
+      "text$en": "In fact, I'm more than a friend!",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-04-29T12:18:40.818Z",
+    "modifiedOn": "2019-04-29T12:18:40.818Z"
+  },
+  {
+    "id": "builtin_text-Xorqkk",
+    "formData": {
+      "text$en": "Besides having friendly conversations with me,",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-04-29T12:21:58.129Z",
+    "modifiedOn": "2019-04-29T12:21:58.129Z"
+  },
+  {
+    "id": "builtin_text--LpdDM",
+    "formData": {
+      "text$en": "I can assist when you need to book an appointment with the doctor or order medicines",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-04-29T12:26:15.786Z",
+    "modifiedOn": "2019-04-29T12:26:15.786Z"
+  },
+  {
+    "id": "builtin_text-RD__sH",
+    "formData": {
+      "text$en": "All from your phone, as we chat.",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-04-29T12:26:55.559Z",
+    "modifiedOn": "2019-04-29T12:26:55.559Z"
+  },
+  {
+    "id": "builtin_text-lX6V1L",
+    "formData": {
+      "text$en": "Remember, We are constantly improving our platform to better your experience. ",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-04-29T12:56:12.873Z",
+    "modifiedOn": "2019-04-29T12:59:07.972Z"
+  },
+  {
+    "id": "builtin_text-W5JgwS",
+    "formData": {
+      "text$en": "You can always email us at : <a href=\"mailto:hello@entergateai.co\">hello@entergateai.co</a> ",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-04-29T13:00:00.690Z",
+    "modifiedOn": "2019-05-18T09:12:36.040Z"
+  },
+  {
+    "id": "builtin_text--WRAVU",
+    "formData": {
+      "text$en": "For feedback and suggestions.",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-04-29T13:00:23.710Z",
+    "modifiedOn": "2019-04-29T13:00:23.710Z"
+  },
+  {
+    "id": "builtin_text-pSGx-r",
+    "formData": {
+      "text$en": "Please choose one of the following:",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-04-29T13:02:32.014Z",
+    "modifiedOn": "2019-04-29T13:02:32.014Z"
+  },
+  {
+    "id": "builtin_text-uhuAJn",
+    "formData": {
+      "text$en": "Sure.. Lets get started..",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-04-29T13:07:42.719Z",
+    "modifiedOn": "2019-04-29T13:07:42.719Z"
+  },
+  {
+    "id": "builtin_text-XgKzJF",
+    "formData": {
+      "text$en": "Please select an area nearest to you.",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-04-30T12:50:57.205Z",
+    "modifiedOn": "2019-04-30T12:50:57.205Z"
+  },
+  {
+    "id": "builtin_text-XqtlIv",
+    "formData": {
+      "text$en": "We are constantly adding new areas",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-04-30T12:51:13.028Z",
+    "modifiedOn": "2019-04-30T12:51:13.028Z"
+  },
+  {
+    "id": "builtin_text-b6ojgN",
+    "formData": {
+      "text$en": "Sorry  but we do not have any doctors in the area.",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-04-30T12:55:45.003Z",
+    "modifiedOn": "2019-05-21T19:39:56.611Z"
+  },
+  {
+    "id": "builtin_text-l7B495",
+    "formData": {
+      "text$en": "We have the following doctors available",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-06T21:20:13.289Z",
+    "modifiedOn": "2019-05-06T21:20:13.289Z"
+  },
+  {
+    "id": "builtin_text-k2M80e",
+    "formData": {
+      "text$en": "Dr. Reddy",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-06T21:21:43.828Z",
+    "modifiedOn": "2019-05-06T21:21:43.828Z"
+  },
+  {
+    "id": "builtin_text-axOL0P",
+    "formData": {
+      "text$en": "Shop No. 1, Progressive Arcade-A, Near K -Stars Hotel,, Diwale Village,, Sector 14, CBD Belapur, Navi Mumbai, Maharashtra 400614",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-06T21:22:02.251Z",
+    "modifiedOn": "2019-05-06T21:44:32.381Z"
+  },
+  {
+    "id": "builtin_text-OkEx3C",
+    "formData": {
+      "text$en": "Contact Number:  <a href=\"tel:9322933221\">9322933221</a>",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-06T21:22:27.145Z",
+    "modifiedOn": "2019-05-08T11:13:12.082Z"
+  },
+  {
+    "id": "builtin_text-5vRJbm",
+    "formData": {
+      "text$en": "Location:  https://goo.gl/maps/ExoAFNuxe7huCu7W8",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-06T21:23:25.838Z",
+    "modifiedOn": "2019-05-06T21:23:25.838Z"
+  },
+  {
+    "id": "builtin_text-CaXxuG",
+    "formData": {
+      "text$en": "Location: <button><a  href=\"https://goo.gl/maps/kscUYNRbfVueEBhz8\"target=\"_blank\"> Map It</a></button>",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-06T21:35:51.310Z",
+    "modifiedOn": "2019-05-08T10:58:02.337Z"
+  },
+  {
+    "id": "builtin_text-g4Yxpp",
+    "formData": {
+      "text$en": "Dr. Rahul Kadam",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-07T07:36:00.605Z",
+    "modifiedOn": "2019-05-07T07:36:00.605Z"
+  },
+  {
+    "id": "builtin_text-cZfOWG",
+    "formData": {
+      "text$en": "Address:  SHOP NO 18 GREEN LAND C.H.S, Plot No 20, Sector 40, Seawoods, Nerul West, Nerul, Navi Mumbai, Maharashtra 400706",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-07T07:36:27.706Z",
+    "modifiedOn": "2019-05-07T07:36:27.706Z"
+  },
+  {
+    "id": "builtin_text-VT76A9",
+    "formData": {
+      "text$en": "Contact number:  <a href=\"tel:9820557499\">9820557499</a>",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-07T07:37:04.151Z",
+    "modifiedOn": "2019-05-08T11:14:50.280Z"
+  },
+  {
+    "id": "builtin_text-Yjflai",
+    "formData": {
+      "text$en": "Location:  <button><a href=\"https://goo.gl/maps/wq4RB1SEhtNnhcfB9\"target=\"_blank\">Map It</a></button>",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-07T07:38:06.965Z",
+    "modifiedOn": "2019-05-08T11:12:09.122Z"
+  },
+  {
+    "id": "builtin_text-t2-94k",
+    "formData": {
+      "text$en": "Dr. Sagar Kapse",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-07T07:45:03.210Z",
+    "modifiedOn": "2019-05-07T07:45:03.210Z"
+  },
+  {
+    "id": "builtin_text-X36rd0",
+    "formData": {
+      "text$en": "Address: Shop no 12 , Olive Excel Society, Plot no 16 Near Sanjeevani Medical Stores, Sector 42, Seawoods, Navi Mumbai, Maharashtra 400706",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-07T07:45:32.397Z",
+    "modifiedOn": "2019-05-07T07:45:32.397Z"
+  },
+  {
+    "id": "builtin_text-Gc49_8",
+    "formData": {
+      "text$en": "<a href=\"tel:09967328985\">09967328985</a>",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-07T07:46:11.727Z",
+    "modifiedOn": "2019-05-08T11:17:30.646Z"
+  },
+  {
+    "id": "builtin_text-LBN6m1",
+    "formData": {
+      "text$en": "Location: <button><a href=\"\nhttps://goo.gl/maps/wq4RB1SEhtNnhcfB9\"target=\"_blank\">Map It</a></button>",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-07T07:46:34.908Z",
+    "modifiedOn": "2019-05-08T11:18:37.997Z"
+  },
+  {
+    "id": "builtin_text-JrUyDc",
+    "formData": {
+      "text$en": "City Smiles dentist",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-07T07:52:49.605Z",
+    "modifiedOn": "2019-05-07T07:52:49.605Z"
+  },
+  {
+    "id": "builtin_text-A2jKB5",
+    "formData": {
+      "text$en": "Address: SHOP NO 18 GREEN LAND C.H.S, Plot No 20, Sector 40, Seawoods, Nerul West, Nerul, Navi Mumbai, Maharashtra 400706",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-07T07:53:12.764Z",
+    "modifiedOn": "2019-05-07T07:53:12.764Z"
+  },
+  {
+    "id": "builtin_text-_-rlIV",
+    "formData": {
+      "text$en": "Contact Number: <a href=\"tel:09022776222\">09022776222</a>",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-07T07:53:54.386Z",
+    "modifiedOn": "2019-05-08T11:15:54.256Z"
+  },
+  {
+    "id": "builtin_text-EBFy9h",
+    "formData": {
+      "text$en": "Location: <button><a href=\"https://goo.gl/maps/wq4RB1SEhtNnhcfB9\"target=\"_blank\">Map It</a></button>",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-07T07:54:18.066Z",
+    "modifiedOn": "2019-05-08T11:16:36.995Z"
+  },
+  {
+    "id": "builtin_text-g13LLW",
+    "formData": {
+      "text$en": "We have the following doctors with us:",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-08T11:20:01.592Z",
+    "modifiedOn": "2019-05-08T11:20:01.592Z"
+  },
+  {
+    "id": "builtin_text-3eQoRQ",
+    "formData": {
+      "text$en": "Dr. Aditya Dhopatkar",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-08T11:21:46.799Z",
+    "modifiedOn": "2019-05-08T11:21:46.799Z"
+  },
+  {
+    "id": "builtin_text-Zv7vBE",
+    "formData": {
+      "text$en": "Address:  Shop C-28 Neighbourhood Complex Behind State Bank of India Sector 4 Nerul (W, Navi Mumbai, Maharashtra 400706",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-08T11:22:58.281Z",
+    "modifiedOn": "2019-05-08T11:22:58.281Z"
+  },
+  {
+    "id": "builtin_text-MwqqCq",
+    "formData": {
+      "text$en": "Contact Number: <a href=\"tel:09870050974\">09870050974</a>",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-08T11:24:09.019Z",
+    "modifiedOn": "2019-05-08T11:45:41.785Z"
+  },
+  {
+    "id": "builtin_text-f-usAV",
+    "formData": {
+      "text$en": "<button><a href=\"https://goo.gl/maps/5ma2nDaQ2CPWtS7K9\"target=\"_blank\">Map It</a></button>",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-08T11:24:46.839Z",
+    "modifiedOn": "2019-05-08T11:24:46.839Z"
+  },
+  {
+    "id": "builtin_text-QE3bsg",
+    "formData": {
+      "text$en": "Dr. Sujit Prasad",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-08T11:42:44.278Z",
+    "modifiedOn": "2019-05-08T11:42:44.278Z"
+  },
+  {
+    "id": "builtin_text-d6RPjK",
+    "formData": {
+      "text$en": "Address: F-17, Haware Centurian Mall, Sector-19, Nerul, Navi Mumbai, Maharashtra 400706",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-08T11:43:05.012Z",
+    "modifiedOn": "2019-05-08T11:43:05.012Z"
+  },
+  {
+    "id": "builtin_text-nZBfRw",
+    "formData": {
+      "text$en": "Contact number: <a href=\"tel:09820146225\">09820146225</a>",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-08T11:44:05.240Z",
+    "modifiedOn": "2019-05-08T11:44:05.240Z"
+  },
+  {
+    "id": "builtin_text-wApv7o",
+    "formData": {
+      "text$en": "Location:<button><a href=\"\nhttps://goo.gl/maps/KB6f6S9hPwoNbAGP7\"target=\"_blank\">Map It</a></button>",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-08T11:44:40.930Z",
+    "modifiedOn": "2019-05-08T11:44:40.930Z"
+  },
+  {
+    "id": "builtin_text-4mK8DO",
+    "formData": {
+      "text$en": "Dr. Chandan Saha",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-08T11:49:00.662Z",
+    "modifiedOn": "2019-05-08T11:49:00.662Z"
+  },
+  {
+    "id": "builtin_text-4qA0wc",
+    "formData": {
+      "text$en": "Address: Office 206, Agarwal Corner Sec.No.21, above Sarswat Bank, E Navi Mumbai, Nerul, Mumbai, Maharashtra 400706",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-08T11:49:25.812Z",
+    "modifiedOn": "2019-05-08T11:49:25.812Z"
+  },
+  {
+    "id": "builtin_text-z3xMgY",
+    "formData": {
+      "text$en": "Contact Number: <a href=\"tel:09821039426\">09821039426</a>",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-08T11:50:19.322Z",
+    "modifiedOn": "2019-05-08T11:50:19.322Z"
+  },
+  {
+    "id": "builtin_text-UQkQre",
+    "formData": {
+      "text$en": "Location:  <button><a href=\"\nhttps://goo.gl/maps/U7ebA7c2gofvJh1AA\"target=\"_blank\">Map It</a></button>",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-08T11:52:57.979Z",
+    "modifiedOn": "2019-05-08T11:52:57.979Z"
+  },
+  {
+    "id": "builtin_text-soOe3d",
+    "formData": {
+      "text$en": "Here is a funny one",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-08T20:37:59.026Z",
+    "modifiedOn": "2019-05-08T20:37:59.026Z"
+  },
+  {
+    "id": "builtin_text-Qhqh9p",
+    "formData": {
+      "text$en": "Doctor: \"I'm sorry but you suffer from a terminal illness and have only 10 to live.\"\n\nPatient: \"What do you mean, 10? 10 what? Months? Weeks?!\"\n\nDoctor: \"Nine.\"",
+      "variations$en": [
+        "My old aunts would come and tease me at weddings, “Well Sarah? Do you think you’ll be next?”  - We’ve settled this quickly once I’ve started doing the same to them at funerals.",
+        "A doctor accidentally prescribes his patient a laxative instead of a coughing syrup. - Three days later the patient comes for a check-up and the doctor asks: “Well? Are you still coughing?” - The patient replies: “No. I’m afraid to.” ",
+        "Job interviewer: “And where would you see yourself in five years’ time Mr. Jeffries?\" - Mr. Jeffries: \"Personally I believe my biggest weakness is in listening.\"",
+        "An old grandma brings a bus driver a bag of peanuts every day.   First the bus driver enjoyed the peanuts but after a week of eating them he asked: \"Please granny, don't bring me peanuts anymore. Have them yourself.\".   The granny answers: \"You know, I don't have teeth anymore. I just prefer to suck the chocolate around them.\"",
+        " Dentist: “This will hurt a little.”  Patient: “OK.”  Dentist: “I’ve been having an affair with your wife for a while now.”",
+        "I got another letter from this lawyer today. It said “Final Notice”. Good that he will not bother me anymore. ",
+        "I dreamed I was forced to eat a giant marshmallow. When I woke up, my pillow was gone.",
+        "An eskimo brings his friend to his home for a visit. When they arrive, his friend asks, puzzled – “So where’s your igloo?” - The friend replies “Oh no, I must’ve left the iron on…”",
+        "\"Can you please hold my hand?\"A mother asks her son: \"Anton, do you think I’m a bad mom?\" - Son: \"My name is Paul.\"",
+        "Doctor: You're obese.  - Patient: For that I definitely want a second opinion.  - Doctor: You’re quite ugly, too."
+      ],
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-08T20:40:59.097Z",
+    "modifiedOn": "2019-05-08T20:40:59.097Z"
+  },
+  {
+    "id": "builtin_text-ow6fzW",
+    "formData": {
+      "text$en": "What kind of fact are you looking for?",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-08T20:49:43.784Z",
+    "modifiedOn": "2019-05-08T20:49:43.784Z"
+  },
+  {
+    "id": "builtin_text-PPRsZw",
+    "formData": {
+      "text$en": "Canadians say “sorry” so much that a law was passed in 2009 declaring that an apology can’t be used as evidence of admission to guilt.",
+      "variations$en": [
+        "Back when dinosaurs existed, there used to be volcanoes that were erupting on the moon.",
+        "The only letters that don’t appear on the periodic table are J & Q.",
+        "One habit of intelligent humans is being easily annoyed by people around them, but saying nothing in order to avoid a meaningless argument.",
+        "Nintendo trademarked the phrase “It’s on like Donkey Kong” in 2010.",
+        "In 2006, a Coca-Cola employee offered to sell Coca-Cola secrets to Pepsi. Pepsi responded by notifying Coca-Cola.",
+        "A single strand of Spaghetti is called a “Spaghetto”.",
+        "The famous line in Titanic from Leonardo DiCaprio, “I’m king of the world!” was improvised.",
+        "If you cut down a cactus in Arizona, you be penalized up to 25 years in jail. It is similar to cutting down a protected tree species.",
+        "The Buddha commonly depicted in statues and pictures is a different person entirely. The real Buddha was actually incredibly skinny because of self-deprivation.",
+        "If you point your car keys to your head, it increases the remote’s signal range. This works by using your brain to act as a radio transmitter."
+      ],
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-08T20:54:18.534Z",
+    "modifiedOn": "2019-05-08T20:54:18.534Z"
+  },
+  {
+    "id": "builtin_text-29Xjqm",
+    "formData": {
+      "text$en": " A heartbeat is the sound made by closure of heart valves when blood is pushed through its chamber.",
+      "variations$en": [
+        "The 5 vital organs essential for human survival are the brain, heart, kidneys, liver and lungs.",
+        "Our nose is our personal air-conditioning system: it warms cold air, cools hot air and filters impurities.",
+        "The nerve cells present in the nose, allows us to smell and regenerates through out ones life.",
+        "You have no sense of smell when you're sleeping.",
+        "You can go without eating for weeks without succumbing, but eleven days is tops for going without sleep.",
+        "On an average the weight of an adult female brain is about 1275 grams.",
+        "When in love, the brain releases the same cocktail of neurotransmitters and hormones that are released by amphetamines, leading to increased heart rate, loss of appetite and sleep, and intense feelings of excitement.",
+        "Your bones are composed of 31% water.",
+        "The muscles of the eye move more than 100,000 times a day."
+      ],
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-08T20:56:50.317Z",
+    "modifiedOn": "2019-05-08T20:56:50.317Z"
+  },
+  {
+    "id": "builtin_text-WaArNo",
+    "formData": {
+      "text$en": "You can look up my creators on :",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-08T20:59:10.800Z",
+    "modifiedOn": "2019-05-08T20:59:10.800Z"
+  },
+  {
+    "id": "builtin_text-JmDsuw",
+    "formData": {
+      "text$en": "Linkedin: <button><a href=\"\nhttps://www.linkedin.com/company/entergate-ai/\"target=\"_blank\">Here</a></button>",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-08T21:00:18.252Z",
+    "modifiedOn": "2019-05-08T21:00:18.252Z"
+  },
+  {
+    "id": "builtin_text-UpGyCC",
+    "formData": {
+      "text$en": "Sorry, but we do not have any dentist in this area..",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-14T13:43:51.963Z",
+    "modifiedOn": "2019-05-14T13:46:27.551Z"
+  },
+  {
+    "id": "builtin_text-Gb3hrQ",
+    "formData": {
+      "text$en": "Excellent. Here are some doctors for you",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-14T13:45:47.615Z",
+    "modifiedOn": "2019-05-14T13:45:47.615Z"
+  },
+  {
+    "id": "builtin_text-W1SxdS",
+    "formData": {
+      "text$en": "Sorry, but we do not any orthopedic doctors near you.",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-14T13:47:14.896Z",
+    "modifiedOn": "2019-05-14T13:47:14.896Z"
+  },
+  {
+    "id": "builtin_text-PXgch7",
+    "formData": {
+      "text$en": "Dr. Nirmal Nehete",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-14T13:51:13.033Z",
+    "modifiedOn": "2019-05-14T13:51:13.033Z"
+  },
+  {
+    "id": "builtin_text-60Uv58",
+    "formData": {
+      "text$en": "Address: F-6, Shahid Sukhdev Singh Marg, Sector 3, CBD Belapur, Navi Mumbai, Maharashtra 400614",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-14T13:52:36.480Z",
+    "modifiedOn": "2019-05-14T13:52:36.480Z"
+  },
+  {
+    "id": "builtin_text-ufkXq9",
+    "formData": {
+      "text$en": "Contact Number: <a href=\"tel:8691801726\">8691801726</a>",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-14T13:54:00.602Z",
+    "modifiedOn": "2019-05-14T13:54:17.150Z"
+  },
+  {
+    "id": "builtin_text-S8BWFw",
+    "formData": {
+      "text$en": "Location: <button><a href=\"\nhttps://goo.gl/maps/6t83bMJuDTNP568J8\"target=\"_blank\">Map It</a></button>",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-14T13:56:27.706Z",
+    "modifiedOn": "2019-05-14T13:56:27.706Z"
+  },
+  {
+    "id": "builtin_text-2hUz8x",
+    "formData": {
+      "text$en": "Dr. B.S Kaushal",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-14T14:00:32.881Z",
+    "modifiedOn": "2019-05-14T14:00:32.881Z"
+  },
+  {
+    "id": "builtin_text-0M-10W",
+    "formData": {
+      "text$en": "Address: Plot No. 21-B, Sector 11, First Floor, Near Ayyappa Temple, Nerul, Navi Mumbai, Maharashtra 400614",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-14T14:00:52.585Z",
+    "modifiedOn": "2019-05-14T14:00:52.585Z"
+  },
+  {
+    "id": "builtin_text-LIJwt6",
+    "formData": {
+      "text$en": "Contact Number: <a href=\"tel:9136123465\">9136123465</a>",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-14T14:01:30.011Z",
+    "modifiedOn": "2019-05-14T14:01:30.011Z"
+  },
+  {
+    "id": "builtin_text-mgBExB",
+    "formData": {
+      "text$en": "Location: <button><a href=\"\nhttps://goo.gl/maps/4h84zVwC28s8bufm7\"target=\"_blank\">Map It</a></button>",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-14T14:02:14.664Z",
+    "modifiedOn": "2019-05-14T14:02:14.664Z"
+  },
+  {
+    "id": "builtin_text-mfL0Nz",
+    "formData": {
+      "text$en": "Dr. Reddy's Dental Clinic",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-14T18:23:27.325Z",
+    "modifiedOn": "2019-05-14T18:23:27.325Z"
+  },
+  {
+    "id": "builtin_text-hhG6vd",
+    "formData": {
+      "text$en": "Address: Arenja Complex, 6, Sector 8, CBD Belapur, Navi Mumbai, Maharashtra 400614",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-14T18:24:19.242Z",
+    "modifiedOn": "2019-05-14T18:24:30.124Z"
+  },
+  {
+    "id": "builtin_text-uYGCYJ",
+    "formData": {
+      "text$en": "Contact number: <a href=\"tel:02227579493\">02227579493</a>",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-14T18:26:13.054Z",
+    "modifiedOn": "2019-05-14T18:26:13.054Z"
+  },
+  {
+    "id": "builtin_text-Y9P1sw",
+    "formData": {
+      "text$en": "Location: <button><a href=\"\nhttps://goo.gl/maps/mo4ZuJ4yvUuANpnz6\"target=\"_blank\">Map It</a></button>",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-14T18:26:46.229Z",
+    "modifiedOn": "2019-05-14T18:26:46.229Z"
+  },
+  {
+    "id": "builtin_text-mX5HfU",
+    "formData": {
+      "text$en": "SmileOvation Dental Clinic",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-14T18:28:58.248Z",
+    "modifiedOn": "2019-05-14T18:28:58.248Z"
+  },
+  {
+    "id": "builtin_text-ZlqgJ7",
+    "formData": {
+      "text$en": "Address: Shop no 1,Heera Building, Plot no -15, sector 19, Opp. Palm Beach Hospital, Belapur, Sector 20, CBD Belapur, cbd Belapur, Maharashtra 400614",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-14T18:29:18.098Z",
+    "modifiedOn": "2019-05-14T18:29:18.098Z"
+  },
+  {
+    "id": "builtin_text-1pDTD2",
+    "formData": {
+      "text$en": "Contact Number: <a href=\"tel:9967328985\">9967328985</a>",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-14T18:29:49.247Z",
+    "modifiedOn": "2019-05-14T18:29:49.247Z"
+  },
+  {
+    "id": "builtin_text-1PNn3Z",
+    "formData": {
+      "text$en": "Location: <button><a href=\"\nhttps://goo.gl/maps/SK1UEpZxixbqmGoo8\"target=\"_blank\">Map It</a></button>",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-14T18:30:18.493Z",
+    "modifiedOn": "2019-05-14T18:30:18.493Z"
+  },
+  {
+    "id": "builtin_text-Te7zKS",
+    "formData": {
+      "text$en": "Dr. Mahesh Maheshwari",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-14T20:00:04.191Z",
+    "modifiedOn": "2019-05-14T20:00:04.191Z"
+  },
+  {
+    "id": "builtin_text-fq5Knw",
+    "formData": {
+      "text$en": "C/o Manak Hospital, Sector 8 Near Rajiv Gandhi flyover, Nerul West, Nerul, Navi Mumbai, Maharashtra 400706",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-14T20:00:28.277Z",
+    "modifiedOn": "2019-05-14T20:00:28.277Z"
+  },
+  {
+    "id": "builtin_text-HgkGfb",
+    "formData": {
+      "text$en": "<a href=\"tel:9820037611\">9820037611</a>",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-14T20:08:43.802Z",
+    "modifiedOn": "2019-05-14T20:08:43.802Z"
+  },
+  {
+    "id": "builtin_text-rVxA66",
+    "formData": {
+      "text$en": "Location: <button><a href=\"\nhttps://goo.gl/maps/U5EqFWobTEinoxWR7\"target=\"_blank\">Map It</a></button>",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-14T20:09:41.366Z",
+    "modifiedOn": "2019-05-14T20:09:41.366Z"
+  },
+  {
+    "id": "builtin_text-MCsFDq",
+    "formData": {
+      "text$en": "Dr. Atul Kantilal Patil",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-14T20:11:30.031Z",
+    "modifiedOn": "2019-05-14T20:11:30.031Z"
+  },
+  {
+    "id": "builtin_text-H0-xSJ",
+    "formData": {
+      "text$en": "Address: Plot No.12, Sector 22, Opp. Nerul Railway Station, Phase-2, Nerul West, Navi Mumbai, Nerul East, Sector 22, Nerul, Mumbai, Maharashtra 400706",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-14T20:11:54.565Z",
+    "modifiedOn": "2019-05-14T20:11:54.565Z"
+  },
+  {
+    "id": "builtin_text-VeiDfO",
+    "formData": {
+      "text$en": "<a href=\"tel:9833935798\">9833935798</a>",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-14T20:13:01.653Z",
+    "modifiedOn": "2019-05-14T20:13:01.653Z"
+  },
+  {
+    "id": "builtin_text-sQVeyW",
+    "formData": {
+      "text$en": "Location: <button><a href=\"\nhttps://goo.gl/maps/qXV7ExWLnQJrk7ZL8\"target=\"_blank\">Map It</a></button>",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-14T20:15:08.383Z",
+    "modifiedOn": "2019-05-14T20:15:08.383Z"
+  },
+  {
+    "id": "builtin_text-e5V9hC",
+    "formData": {
+      "text$en": "Sorry, but we don't have any chemists in your area..",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-15T20:08:29.372Z",
+    "modifiedOn": "2019-05-15T20:08:29.372Z"
+  },
+  {
+    "id": "builtin_text-WMpiqI",
+    "formData": {
+      "text$en": "Here are some options for you:",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-15T20:27:51.919Z",
+    "modifiedOn": "2019-05-15T20:27:51.919Z"
+  },
+  {
+    "id": "builtin_text-A8QAVM",
+    "formData": {
+      "text$en": "Wellness Forever (Nerul East)",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-15T20:40:30.766Z",
+    "modifiedOn": "2019-05-15T20:40:30.766Z"
+  },
+  {
+    "id": "builtin_text-i3U_SD",
+    "formData": {
+      "text$en": "Address:  Shop no.7 & 8, Vighnahar Heights, Nerul East, Sector 21 Mumbai, Maharashtra 400706",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-15T20:47:26.091Z",
+    "modifiedOn": "2019-05-15T20:47:26.091Z"
+  },
+  {
+    "id": "builtin_text-JWwpcT",
+    "formData": {
+      "text$en": "Contact Number:  <a href=\"tel:02227705834\">02227705834</a>",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-15T21:07:21.787Z",
+    "modifiedOn": "2019-05-15T21:07:21.787Z"
+  },
+  {
+    "id": "builtin_text-hFvAiW",
+    "formData": {
+      "text$en": "Location:  <button><a href=\"\nhttps://goo.gl/maps/rERmwwQfTbRjiGC57\"target=\"_blank\">Map It</a></button>\n",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-15T21:07:47.105Z",
+    "modifiedOn": "2019-05-15T21:07:47.105Z"
+  },
+  {
+    "id": "builtin_text-DncKau",
+    "formData": {
+      "text$en": "Wellness Forever (Nerul West)",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-15T21:08:31.421Z",
+    "modifiedOn": "2019-05-15T21:08:31.421Z"
+  },
+  {
+    "id": "builtin_text-rexLfe",
+    "formData": {
+      "text$en": "Address: Shop No. 2, Ground Floor, Chandrai Arcade, Plot No -24,25,26 & 12A Opp. Railway Station, Sector -20 Nerul (W), Navi Mumbai, Mumbai, Maharashtra 400706",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-15T21:09:20.680Z",
+    "modifiedOn": "2019-05-15T21:09:20.680Z"
+  },
+  {
+    "id": "builtin_text-sh2q14",
+    "formData": {
+      "text$en": "Contact Number: <a href=\"tel:02227729901\">02227729901</a>",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-15T21:09:57.044Z",
+    "modifiedOn": "2019-05-15T21:09:57.044Z"
+  },
+  {
+    "id": "builtin_text-_q0zK2",
+    "formData": {
+      "text$en": "Location:  <button><a href=\"\nhttps://goo.gl/maps/AJueBSfWs1RkPP6N6\"target=\"_blank\">Map It</a></button>",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-15T21:10:22.626Z",
+    "modifiedOn": "2019-05-15T21:10:22.626Z"
+  },
+  {
+    "id": "builtin_text-xz4QR5",
+    "formData": {
+      "text$en": "Wellness Forever (Sector 48)",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-17T20:48:55.219Z",
+    "modifiedOn": "2019-05-17T20:48:55.219Z"
+  },
+  {
+    "id": "builtin_text-CBiTA3",
+    "formData": {
+      "text$en": "Address: shop.no.3&4, D-17, Shitabai Nana Kambale Marg, Ashtagandha Society, Om Ganesh Society, Sector-48, Seawoods, Navi Mumbai, Maharashtra 400706",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-17T20:52:37.986Z",
+    "modifiedOn": "2019-05-17T20:52:37.986Z"
+  },
+  {
+    "id": "builtin_text-g2Rjqw",
+    "formData": {
+      "text$en": "Contact Number: <a href=\"tel:02227705834\">02227705834</a>",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-17T20:56:48.686Z",
+    "modifiedOn": "2019-05-17T20:56:48.686Z"
+  },
+  {
+    "id": "builtin_text-noR6hw",
+    "formData": {
+      "text$en": "Location: <button><a href=\"\nhttps://goo.gl/maps/ckj3GY7kuSDwycHz9\"target=\"_blank\">Map It</a></button>",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-17T20:57:32.005Z",
+    "modifiedOn": "2019-05-17T20:57:32.005Z"
+  },
+  {
+    "id": "builtin_text-yIWJPK",
+    "formData": {
+      "text$en": "Wellness Forever (Sector 40)",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-17T21:01:14.938Z",
+    "modifiedOn": "2019-05-17T21:01:14.938Z"
+  },
+  {
+    "id": "builtin_text-uKVWJP",
+    "formData": {
+      "text$en": "Address: Shop No. 5, Plot No. 49, Shreeji Darshan Sector 40 Seawoods, Navi Mumbai, Maharashtra 400706",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-17T21:03:34.597Z",
+    "modifiedOn": "2019-05-17T21:03:34.597Z"
+  },
+  {
+    "id": "builtin_text-uFPC5c",
+    "formData": {
+      "text$en": "Contact Number: <a href=\"tel:02227700256\">02227700256</a>",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-17T21:04:16.463Z",
+    "modifiedOn": "2019-05-17T21:04:16.463Z"
+  },
+  {
+    "id": "builtin_text-7AzfJE",
+    "formData": {
+      "text$en": "Location: https://goo.gl/maps/t6GFqxZ9LTr2KWK86",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-17T21:04:34.201Z",
+    "modifiedOn": "2019-05-17T21:04:34.201Z"
+  },
+  {
+    "id": "builtin_text-rxWUtt",
+    "formData": {
+      "text$en": "Wellness Forever (Vashi Station)",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-17T21:09:02.983Z",
+    "modifiedOn": "2019-05-17T21:09:02.983Z"
+  },
+  {
+    "id": "builtin_text-k4J5Ci",
+    "formData": {
+      "text$en": "Address: Railway Station, Plot No.39/5A, Shop No.6/D,BSEL Tech Park,Sector -30A, Opp, Vashi, Navi Mumbai, Maharashtra 400705",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-17T21:11:33.305Z",
+    "modifiedOn": "2019-05-17T21:11:33.305Z"
+  },
+  {
+    "id": "builtin_text-KWV9yU",
+    "formData": {
+      "text$en": "Contact Number: <a href=\"tel:02227810453\">02227810453</a>",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-17T21:12:15.386Z",
+    "modifiedOn": "2019-05-17T21:12:15.386Z"
+  },
+  {
+    "id": "builtin_text-DQmYak",
+    "formData": {
+      "text$en": "Location: <button><a href=\"\nhttps://goo.gl/maps/Qs7uvv8dHc6KsyU8A\"target=\"_blank\">Map It</a></button>",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-17T21:13:21.437Z",
+    "modifiedOn": "2019-05-17T21:13:21.437Z"
+  },
+  {
+    "id": "builtin_text-Y__7vM",
+    "formData": {
+      "text$en": "Wellness Forever (Vashi Sector 9)",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-17T21:14:30.307Z",
+    "modifiedOn": "2019-05-17T21:14:30.307Z"
+  },
+  {
+    "id": "builtin_text-zXoXcB",
+    "formData": {
+      "text$en": "Address: Shop No.11 & 12, Building No.F1 Aditi Apartments, Sector 9, Vashi, Navi Mumbai, Maharashtra 400703",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-17T21:14:54.135Z",
+    "modifiedOn": "2019-05-17T21:14:54.135Z"
+  },
+  {
+    "id": "builtin_text-_znVCM",
+    "formData": {
+      "text$en": "Contact Number:  <a href=\"tel:02227668881\">02227668881</a>",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-17T21:15:36.443Z",
+    "modifiedOn": "2019-05-17T21:15:36.443Z"
+  },
+  {
+    "id": "builtin_text-N21xxh",
+    "formData": {
+      "text$en": "Location: <button><a href=\"\nhttps://goo.gl/maps/9hPZf2e575Qbu3Uv9\"target=\"_blank\">Map It</a></button>",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-17T21:16:41.335Z",
+    "modifiedOn": "2019-05-17T21:16:41.335Z"
+  },
+  {
+    "id": "builtin_text-FHu0Cm",
+    "formData": {
+      "text$en": "We have the following choice:",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-17T21:17:47.130Z",
+    "modifiedOn": "2019-05-17T21:17:47.130Z"
+  },
+  {
+    "id": "builtin_text-T-hZoX",
+    "formData": {
+      "text$en": "Wellness Forever Sanpada",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-17T21:19:10.941Z",
+    "modifiedOn": "2019-05-17T21:19:10.941Z"
+  },
+  {
+    "id": "builtin_text-ADCyXp",
+    "formData": {
+      "text$en": "Address: Plot No 01 Ground Floor, Shop No 51 And 52 Moraj Residency, Sector No 16, Palm Beach, Sanpada, Navi Mumbai, Maharashtra 400703",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-17T21:19:27.014Z",
+    "modifiedOn": "2019-05-17T21:19:27.014Z"
+  },
+  {
+    "id": "builtin_text-57gNwe",
+    "formData": {
+      "text$en": "Contact number: <a href=\"tel:02227815167\">02227815167</a>",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-17T21:23:26.194Z",
+    "modifiedOn": "2019-05-17T21:23:26.194Z"
+  },
+  {
+    "id": "builtin_text-KXaUoL",
+    "formData": {
+      "text$en": "Location: <button><a href=\"\nhttps://goo.gl/maps/sbZ7aGUgiiCiqK237\"target=\"_blank\">Map It</a></button>",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-17T21:23:49.679Z",
+    "modifiedOn": "2019-05-17T21:23:49.679Z"
+  },
+  {
+    "id": "builtin_text-DKRblq",
+    "formData": {
+      "text$en": "We have the following doctor with us:",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-20T11:38:05.706Z",
+    "modifiedOn": "2019-05-20T11:38:05.706Z"
+  },
+  {
+    "id": "builtin_text-TG1Ten",
+    "formData": {
+      "text$en": "Kukreja Clinic",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-20T11:47:41.418Z",
+    "modifiedOn": "2019-05-20T11:47:41.418Z"
+  },
+  {
+    "id": "builtin_text-tlQ5tY",
+    "formData": {
+      "text$en": "Address: Plot No. 4, Budhyadev Mandir Marg, Seawood, Sector 17, Sanpada, Navi Mumbai, Maharashtra 400705",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-20T11:48:01.506Z",
+    "modifiedOn": "2019-05-20T11:48:01.506Z"
+  },
+  {
+    "id": "builtin_text-rQ7OYA",
+    "formData": {
+      "text$en": "Contact Number:  <a href=\"tel:09867881300\">09867881300</a>",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-20T11:49:15.419Z",
+    "modifiedOn": "2019-05-20T11:49:15.419Z"
+  },
+  {
+    "id": "builtin_text-wxQrZh",
+    "formData": {
+      "text$en": "Location:  <button><a href=\"\nhttps://goo.gl/maps/qaEbRVHm8Nar7HTbA\"target=\"_blank\">Map It</a></button>",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-20T11:49:44.647Z",
+    "modifiedOn": "2019-05-20T11:49:44.647Z"
+  },
+  {
+    "id": "builtin_text-i0hVmb",
+    "formData": {
+      "text$en": "Suman Dental Clinic",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-20T14:27:20.757Z",
+    "modifiedOn": "2019-05-20T14:27:20.757Z"
+  },
+  {
+    "id": "builtin_text-DBMbq2",
+    "formData": {
+      "text$en": "Address: Shivraj plaza, Shop No. 1, Sector - 7, Near GP Parasik bank, Sanpada, Navi Mumbai, 400705",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-20T14:27:39.057Z",
+    "modifiedOn": "2019-05-20T14:27:39.057Z"
+  },
+  {
+    "id": "builtin_text-7LP1r3",
+    "formData": {
+      "text$en": "Contact Number: <a href=\"tel:09321684141\">09321684141</a>",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-20T14:28:29.741Z",
+    "modifiedOn": "2019-05-20T14:28:29.741Z"
+  },
+  {
+    "id": "builtin_text-N91ju-",
+    "formData": {
+      "text$en": "Location: <button><a href=\"\nhttps://goo.gl/maps/Z8uhXw9xJyLnypHz8\"target=\"_blank\">Map It</a></button>",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-20T14:29:10.255Z",
+    "modifiedOn": "2019-05-20T14:29:10.255Z"
+  },
+  {
+    "id": "builtin_text-HEiF7l",
+    "formData": {
+      "text$en": "Shree Pet Care",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-20T14:30:53.198Z",
+    "modifiedOn": "2019-05-20T14:30:53.198Z"
+  },
+  {
+    "id": "builtin_text-R5Odrs",
+    "formData": {
+      "text$en": "Address: Shop No. 16, Seawoods Garden, Near Moraj Residency, Palm Beach Road, Sector 17, Sanpada, Navi Mumbai, Mumbai, Maharashtra 400705",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-20T14:31:18.901Z",
+    "modifiedOn": "2019-05-20T14:31:18.901Z"
+  },
+  {
+    "id": "builtin_text-GzdNgj",
+    "formData": {
+      "text$en": "Contact Number:  <a href=\"tel:09920027074\">09920027074</a>",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-20T14:32:28.966Z",
+    "modifiedOn": "2019-05-20T14:32:28.966Z"
+  },
+  {
+    "id": "builtin_text-9nMkQz",
+    "formData": {
+      "text$en": "Location: <button><a href=\"\nhttps://goo.gl/maps/qxiJCKxiwafyzY7h8\"target=\"_blank\">Map It</a></button>",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-20T14:32:56.366Z",
+    "modifiedOn": "2019-05-20T14:32:56.366Z"
+  },
+  {
+    "id": "builtin_text-ZRGmbj",
+    "formData": {
+      "text$en": "Dr. Rajesh Badiyani",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-20T14:34:28.565Z",
+    "modifiedOn": "2019-05-20T14:34:28.565Z"
+  },
+  {
+    "id": "builtin_text-vHuMod",
+    "formData": {
+      "text$en": "Address: Sanpada Flyover, Sanpada, Palm Beach, Sanpada, Navi Mumbai, Maharashtra 400705",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-20T14:34:47.536Z",
+    "modifiedOn": "2019-05-20T14:34:47.536Z"
+  },
+  {
+    "id": "builtin_text-FQMIqz",
+    "formData": {
+      "text$en": "Contact Number: <a href=\"tel:09769636366\">09769636366</a>",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-20T14:35:30.012Z",
+    "modifiedOn": "2019-05-20T14:35:30.012Z"
+  },
+  {
+    "id": "builtin_text-JtBj-P",
+    "formData": {
+      "text$en": "Location: <button><a href=\"\nhttps://goo.gl/maps/Bk64z2eRCKFEVddK6\"target=\"_blank\">Map It</a></button>",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-20T14:36:04.660Z",
+    "modifiedOn": "2019-05-20T14:36:04.660Z"
+  },
+  {
+    "id": "builtin_text-5i-EHb",
+    "formData": {
+      "text$en": "Dr. N.K. Upadhyay",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-20T15:00:34.376Z",
+    "modifiedOn": "2019-05-20T15:00:34.376Z"
+  },
+  {
+    "id": "builtin_text-S40y40",
+    "formData": {
+      "text$en": "Address: Vashi Railway Station Road, Sector 17, Vashi, Navi Mumbai, Maharashtra 400703",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-20T15:00:58.106Z",
+    "modifiedOn": "2019-05-20T15:00:58.106Z"
+  },
+  {
+    "id": "builtin_text-zO2ZZz",
+    "formData": {
+      "text$en": "Contact Number: <a href=\"tel:02227895335\">02227895335</a>",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-20T15:01:39.545Z",
+    "modifiedOn": "2019-05-20T15:01:39.545Z"
+  },
+  {
+    "id": "builtin_text-w8Xj9D",
+    "formData": {
+      "text$en": "Location: <button><a href=\"\nhttps://goo.gl/maps/4oM4chbQMLqt9ybY9\"target=\"_blank\">Map It</a></button>",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-20T15:02:04.929Z",
+    "modifiedOn": "2019-05-20T15:02:04.929Z"
+  },
+  {
+    "id": "builtin_text-KFkwu5",
+    "formData": {
+      "text$en": "Dr. Sanjay Asgekar",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-20T15:02:34.453Z",
+    "modifiedOn": "2019-05-20T15:02:34.453Z"
+  },
+  {
+    "id": "builtin_text-6Xm7rJ",
+    "formData": {
+      "text$en": "Address: 3rd Floor, Shanti Centre, Near Navaratna Hotel, Sector 17, Sector 17, Vashi, Navi Mumbai, Maharashtra 400703",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-20T15:02:52.358Z",
+    "modifiedOn": "2019-05-20T15:02:52.358Z"
+  },
+  {
+    "id": "builtin_text-IJ-woy",
+    "formData": {
+      "text$en": "Contact number: <a href=\"tel:02227650728\">02227650728</a>",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-20T15:03:26.823Z",
+    "modifiedOn": "2019-05-20T15:03:26.823Z"
+  },
+  {
+    "id": "builtin_text-QEfaBL",
+    "formData": {
+      "text$en": "Location:  <button><a href=\"\nhttps://goo.gl/maps/MUcrBV26jRzYq1hd9\"target=\"_blank\">Map It</a></button>",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-20T15:04:27.279Z",
+    "modifiedOn": "2019-05-20T15:04:27.279Z"
+  },
+  {
+    "id": "builtin_text-r1vvts",
+    "formData": {
+      "text$en": "Dr. Pankaj Mehta",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-20T15:14:31.318Z",
+    "modifiedOn": "2019-05-20T15:14:31.318Z"
+  },
+  {
+    "id": "builtin_text-elBNKY",
+    "formData": {
+      "text$en": "Address: A-104, Om Rachana CHS, Next to Apna Bazar,, Above Hotel Kshirsagar, Sector 17, Vashi, Navi Mumbai, Maharashtra 400703",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-20T15:15:10.999Z",
+    "modifiedOn": "2019-05-20T15:15:10.999Z"
+  },
+  {
+    "id": "builtin_text-axL184",
+    "formData": {
+      "text$en": "Contact Number:  <a href=\"tel:02227899930\">02227899930</a>",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-20T15:17:06.819Z",
+    "modifiedOn": "2019-05-20T15:17:06.819Z"
+  },
+  {
+    "id": "builtin_text-wpQ1Ct",
+    "formData": {
+      "text$en": "Location: <button><a href=\"\nhttps://goo.gl/maps/y3PALHGFkU8rWEGN6\"target=\"_blank\">Map It</a></button>",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-20T15:17:46.319Z",
+    "modifiedOn": "2019-05-20T15:17:46.319Z"
+  },
+  {
+    "id": "builtin_text-J1XS7v",
+    "formData": {
+      "text$en": "Navi Mumbai Veterinary Clinic",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-20T15:20:51.418Z",
+    "modifiedOn": "2019-05-20T15:20:51.418Z"
+  },
+  {
+    "id": "builtin_text-pYho6J",
+    "formData": {
+      "text$en": "Address: Shree Tulja Bhavani Road, Near Fire Brigade Station, Sector-16, Juhu Nagar, Sector-16, Vashi, Navi Mumbai, Maharashtra 400703",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-20T15:21:13.448Z",
+    "modifiedOn": "2019-05-20T15:21:13.448Z"
+  },
+  {
+    "id": "builtin_text-RNUX77",
+    "formData": {
+      "text$en": "Contact Number:  <a href=\"tel:02227662795\">02227662795</a>",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-20T15:22:22.461Z",
+    "modifiedOn": "2019-05-20T15:22:22.461Z"
+  },
+  {
+    "id": "builtin_text-1xAWT9",
+    "formData": {
+      "text$en": "Location:  <button><a href=\"\nhttps://goo.gl/maps/u4wijBRadKRqYbV99\"target=\"_blank\">Map It</a></button>",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-20T15:23:04.017Z",
+    "modifiedOn": "2019-05-20T15:23:04.017Z"
+  },
+  {
+    "id": "builtin_text-VlXciZ",
+    "formData": {
+      "text$en": "Dr. kunal Makhija",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-20T15:24:36.132Z",
+    "modifiedOn": "2019-05-20T15:24:36.132Z"
+  },
+  {
+    "id": "builtin_text-oKchvr",
+    "formData": {
+      "text$en": "Address: Vinamra Swaraj Hospital, Plot no - 108/109, Opposite Shiv Sena Shaka, Juhu Nagar, Juhu Village, Sector 11, Vashi, Navi Mumbai, Maharashtra 400703",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-20T15:25:00.688Z",
+    "modifiedOn": "2019-05-20T15:25:00.688Z"
+  },
+  {
+    "id": "builtin_text-Xz-q6t",
+    "formData": {
+      "text$en": "Contact Number:  <a href=\"tel:09769003875\">09769003875</a>",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-20T15:26:51.962Z",
+    "modifiedOn": "2019-05-20T15:26:51.962Z"
+  },
+  {
+    "id": "builtin_text--T802R",
+    "formData": {
+      "text$en": "Location:  <button><a href=\"\nhttps://goo.gl/maps/HAWmZe3gUHM5NSSSA\"target=\"_blank\">Map It</a></button>",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-20T15:27:30.213Z",
+    "modifiedOn": "2019-05-20T15:27:30.213Z"
+  },
+  {
+    "id": "builtin_text-FsKtFR",
+    "formData": {
+      "text$en": "Thank you for using Myra - Our Healthcare Bot",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-21T17:47:38.829Z",
+    "modifiedOn": "2019-05-21T17:47:38.829Z"
+  },
+  {
+    "id": "builtin_text-1G8Urs",
+    "formData": {
+      "text$en": "Would you like to know more about us?",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-21T17:48:17.993Z",
+    "modifiedOn": "2019-05-21T17:48:17.993Z"
+  },
+  {
+    "id": "builtin_text-qi1coG",
+    "formData": {
+      "text$en": "We are Entergate AI",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-21T17:50:14.258Z",
+    "modifiedOn": "2019-05-21T17:50:14.258Z"
+  },
+  {
+    "id": "builtin_text-RVyBKf",
+    "formData": {
+      "text$en": "Our Website: <button><a href=\"\nhttp://entergateai.co/\"target=\"_blank\">http://entergateai.co/</a></button>",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-21T17:51:17.813Z",
+    "modifiedOn": "2019-05-21T17:51:17.813Z"
+  },
+  {
+    "id": "builtin_text-w3jn5h",
+    "formData": {
+      "text$en": "Our LinkedIn:  <button><a href=\"\nhttps://www.linkedin.com/company/14503252/\"target=\"_blank\">LinkedIn</a></button>",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-21T17:52:45.417Z",
+    "modifiedOn": "2019-05-21T17:52:45.417Z"
+  },
+  {
+    "id": "builtin_text-yShFBT",
+    "formData": {
+      "text$en": "That's alright. Maybe some other time...",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-21T17:53:41.828Z",
+    "modifiedOn": "2019-05-21T17:53:41.828Z"
+  },
+  {
+    "id": "builtin_text-kj7-U5",
+    "formData": {
+      "text$en": "That's alright. Maybe some other time...",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-21T17:54:05.816Z",
+    "modifiedOn": "2019-05-21T17:54:05.816Z"
+  },
+  {
+    "id": "builtin_text-8KCPCL",
+    "formData": {
+      "text$en": "Would you like to give us your feedback with a quick survey?",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-21T17:54:49.120Z",
+    "modifiedOn": "2019-05-21T17:54:49.120Z"
+  },
+  {
+    "id": "builtin_text-Yv06hG",
+    "formData": {
+      "text$en": "This will only take a minute I promise.",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-21T17:55:15.733Z",
+    "modifiedOn": "2019-05-21T17:55:15.733Z"
+  },
+  {
+    "id": "builtin_text-CzbqGT",
+    "formData": {
+      "text$en": "Thank you for your time.",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-21T18:02:54.078Z",
+    "modifiedOn": "2019-05-21T18:02:54.078Z"
+  },
+  {
+    "id": "builtin_text-DmrQy2",
+    "formData": {
+      "text$en": "Here it is: <button><a href=\"\nhttps://forms.gle/RVMsRNZPofm7h6sP9\"target=\"_blank\">Quick Survey</a></button>",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-21T18:08:00.491Z",
+    "modifiedOn": "2019-05-21T18:08:00.491Z"
+  },
+  {
+    "id": "builtin_text-1H8Gnn",
+    "formData": {
+      "text$en": "We thank you again for using Myra - Our Healthcare bot",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-21T18:09:24.996Z",
+    "modifiedOn": "2019-05-21T18:09:24.996Z"
+  },
+  {
+    "id": "builtin_text-WD21wX",
+    "formData": {
+      "text$en": "We are constantly updating our App and adding new doctors..",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-05-21T18:39:49.506Z",
+    "modifiedOn": "2019-05-21T18:39:49.506Z"
+  }
+]

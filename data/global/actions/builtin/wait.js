@@ -1,0 +1,17 @@
+//CHECKSUM:3df80319250e612646fe199a0be7191c81b5f0a03ba1d7dbad27f11e6f8caac9
+"use strict";
+
+/**
+ * Wait for a bit.
+ *
+ * @title Wait/Delay
+ * @category Utility
+ * @author Botpress, Inc.
+ * @param {number} delay=1000 - The number of milliseconds to wait
+ */
+const wait = async delay => {
+  return new Promise(resolve => setTimeout(() => resolve(), delay));
+};
+
+return wait(args.delay || 1000);
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndhaXQuanMiXSwibmFtZXMiOlsid2FpdCIsImRlbGF5IiwiUHJvbWlzZSIsInJlc29sdmUiLCJzZXRUaW1lb3V0IiwiYXJncyJdLCJtYXBwaW5ncyI6Ijs7QUFBQTs7Ozs7Ozs7QUFRQSxNQUFNQSxJQUFJLEdBQUcsTUFBTUMsS0FBTixJQUFlO0FBQzFCLFNBQU8sSUFBSUMsT0FBSixDQUFZQyxPQUFPLElBQUlDLFVBQVUsQ0FBQyxNQUFNRCxPQUFPLEVBQWQsRUFBa0JGLEtBQWxCLENBQWpDLENBQVA7QUFDRCxDQUZEOztBQUlBLE9BQU9ELElBQUksQ0FBQ0ssSUFBSSxDQUFDSixLQUFMLElBQWMsSUFBZixDQUFYIiwic291cmNlUm9vdCI6Ii92YXIvbGliL2plbmtpbnMvd29ya3NwYWNlL2J1aWxkLXdpbmRvd3MvbW9kdWxlcy9idWlsdGluL3NyYy9iYWNrZW5kIiwic291cmNlc0NvbnRlbnQiOlsiLyoqXG4gKiBXYWl0IGZvciBhIGJpdC5cbiAqXG4gKiBAdGl0bGUgV2FpdC9EZWxheVxuICogQGNhdGVnb3J5IFV0aWxpdHlcbiAqIEBhdXRob3IgQm90cHJlc3MsIEluYy5cbiAqIEBwYXJhbSB7bnVtYmVyfSBkZWxheT0xMDAwIC0gVGhlIG51bWJlciBvZiBtaWxsaXNlY29uZHMgdG8gd2FpdFxuICovXG5jb25zdCB3YWl0ID0gYXN5bmMgZGVsYXkgPT4ge1xuICByZXR1cm4gbmV3IFByb21pc2UocmVzb2x2ZSA9PiBzZXRUaW1lb3V0KCgpID0+IHJlc29sdmUoKSwgZGVsYXkpKVxufVxuXG5yZXR1cm4gd2FpdChhcmdzLmRlbGF5IHx8IDEwMDApXG4iXX0=

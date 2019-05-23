@@ -1,0 +1,95 @@
+{
+  "version": "0.0.1",
+  "catchAll": {},
+  "startNode": "entry",
+  "nodes": [
+    {
+      "id": "67f0ac5fae",
+      "name": "entry",
+      "onEnter": [
+        "say #!builtin_text-FHu0Cm"
+      ],
+      "onReceive": null,
+      "next": []
+    },
+    {
+      "id": "e7d2db4fc1",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "final_choice",
+      "flow": "skills/choice-c0547b.flow.json",
+      "next": [
+        {
+          "caption": "User picked [got9]",
+          "condition": "temp['skill-choice-ret'] == \"got9\"",
+          "node": "end_final"
+        },
+        {
+          "caption": "User picked [back9]",
+          "condition": "temp['skill-choice-ret'] == \"back9\"",
+          "node": "pick_one"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "fail"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "8c84efadc6",
+      "name": "fail",
+      "next": [
+        {
+          "condition": "true",
+          "node": "final_choice"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null
+    },
+    {
+      "id": "1502f43d26",
+      "name": "end_final",
+      "next": [
+        {
+          "condition": "true",
+          "node": "End.flow.json"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null
+    },
+    {
+      "id": "b2517f7035",
+      "name": "pick_one",
+      "next": [
+        {
+          "condition": "true",
+          "node": "Pick_one.flow.json"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null
+    },
+    {
+      "id": "cca0f595b9",
+      "name": "node-54ea",
+      "next": [
+        {
+          "condition": "true",
+          "node": "final_choice"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-T-hZoX",
+        "say #!builtin_text-ADCyXp",
+        "say #!builtin_text-57gNwe",
+        "say #!builtin_text-KXaUoL"
+      ],
+      "onReceive": null
+    }
+  ]
+}

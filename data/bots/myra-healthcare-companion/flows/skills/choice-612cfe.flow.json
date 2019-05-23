@@ -1,0 +1,84 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "next": []
+  },
+  "startNode": "entry",
+  "skillData": {
+    "contentId": "builtin_single-choice-y9hhEJ",
+    "keywords": {
+      "Orthonerul1": [
+        "Orthonerul1",
+        "Dr. Mahesh Maheshwari"
+      ],
+      "orthonerul2": [
+        "orthonerul2",
+        "Dr. Atul Kantilal Patil"
+      ]
+    },
+    "config": {}
+  },
+  "nodes": [
+    {
+      "name": "entry",
+      "onEnter": [
+        "say #!builtin_single-choice-y9hhEJ {\"skill\":\"choice\"}"
+      ],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "435154"
+    },
+    {
+      "name": "parse",
+      "onReceive": [
+        "basic-skills/choice_parse_answer {\"contentId\":\"builtin_single-choice-y9hhEJ\",\"keywords\":{\"Orthonerul1\":[\"Orthonerul1\",\"Dr. Mahesh Maheshwari\"],\"orthonerul2\":[\"orthonerul2\",\"Dr. Atul Kantilal Patil\"]},\"config\":{}}"
+      ],
+      "next": [
+        {
+          "condition": "temp['skill-choice-valid'] === true",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "invalid"
+        }
+      ],
+      "onEnter": [],
+      "id": "528502"
+    },
+    {
+      "name": "invalid",
+      "onEnter": [
+        "basic-skills/choice_invalid_answer"
+      ],
+      "next": [
+        {
+          "condition": "temp['skill-choice-invalid-count'] <= undefined",
+          "node": "sorry"
+        },
+        {
+          "condition": "true",
+          "node": "#"
+        }
+      ],
+      "id": "666556"
+    },
+    {
+      "name": "sorry",
+      "onEnter": [
+        "say #!builtin_single-choice-y9hhEJ {\"skill\":\"choice\"}"
+      ],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "828994"
+    }
+  ]
+}

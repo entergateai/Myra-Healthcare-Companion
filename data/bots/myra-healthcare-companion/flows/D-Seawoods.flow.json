@@ -1,0 +1,262 @@
+{
+  "version": "0.0.1",
+  "catchAll": {},
+  "startNode": "entry",
+  "nodes": [
+    {
+      "id": "b7f81957f6",
+      "name": "entry",
+      "onEnter": [
+        "say #!builtin_text-DKRblq"
+      ],
+      "onReceive": null,
+      "next": [
+        {
+          "condition": "true",
+          "node": "type_of_doc"
+        }
+      ]
+    },
+    {
+      "id": "cf6e8aebd0",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "type_of_doc",
+      "flow": "skills/choice-07a9f4.flow.json",
+      "next": [
+        {
+          "caption": "User picked [gp]",
+          "condition": "temp['skill-choice-ret'] == \"gp\"",
+          "node": "GP"
+        },
+        {
+          "caption": "User picked [dentist]",
+          "condition": "temp['skill-choice-ret'] == \"dentist\"",
+          "node": "Dentist"
+        },
+        {
+          "caption": "User picked [ortho]",
+          "condition": "temp['skill-choice-ret'] == \"ortho\"",
+          "node": "Ortho"
+        },
+        {
+          "caption": "User picked [vet]",
+          "condition": "temp['skill-choice-ret'] == \"vet\"",
+          "node": "Vet"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "node-ea39"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "6c0a3e2808",
+      "name": "node-ea39",
+      "next": [
+        {
+          "condition": "true",
+          "node": "type_of_doc"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null
+    },
+    {
+      "id": "c91dbaa080",
+      "name": "GP",
+      "next": [],
+      "onEnter": [],
+      "onReceive": null
+    },
+    {
+      "id": "d7f058a009",
+      "name": "Dentist",
+      "next": [
+        {
+          "condition": "true",
+          "node": "dent_choice"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-l7B495"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "701a9abf9f",
+      "name": "Ortho",
+      "next": [
+        {
+          "condition": "true",
+          "node": "Dr.Rahul_Kadam"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-l7B495"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "b35e6a72d9",
+      "name": "Vet",
+      "next": [],
+      "onEnter": [],
+      "onReceive": null
+    },
+    {
+      "id": "dc018198b8",
+      "name": "Dr.Rahul_Kadam",
+      "next": [
+        {
+          "condition": "true",
+          "node": "seawoods_final"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-g4Yxpp",
+        "say #!builtin_text-cZfOWG",
+        "say #!builtin_text-VT76A9",
+        "say #!builtin_text-Yjflai"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "skill-c84604",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "dent_choice",
+      "flow": "skills/choice-c84604.flow.json",
+      "next": [
+        {
+          "caption": "User picked [sagar_k...]",
+          "condition": "temp['skill-choice-ret'] == \"sagar_kapse\"",
+          "node": "Dr.Sagar_Kapse"
+        },
+        {
+          "caption": "User picked [citysmi...]",
+          "condition": "temp['skill-choice-ret'] == \"citysmile\"",
+          "node": "City_Smiles_dentist"
+        },
+        {
+          "caption": "User picked [back]",
+          "condition": "temp['skill-choice-ret'] == \"back\"",
+          "node": "node-d0a3"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "node-d0a3"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "f39af35c56",
+      "name": "node-d0a3",
+      "next": [
+        {
+          "condition": "true",
+          "node": "dent_choice"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null
+    },
+    {
+      "id": "5439f9be08",
+      "name": "Dr.Sagar_Kapse",
+      "next": [
+        {
+          "condition": "true",
+          "node": "seawoods_final"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-t2-94k",
+        "say #!builtin_text-X36rd0",
+        "say #!builtin_text-Gc49_8",
+        "say #!builtin_text-LBN6m1"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "829067a3c9",
+      "name": "City_Smiles_dentist",
+      "next": [
+        {
+          "condition": "true",
+          "node": "seawoods_final"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-JrUyDc",
+        "say #!builtin_text-A2jKB5",
+        "say #!builtin_text-_-rlIV",
+        "say #!builtin_text-EBFy9h"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "skill-667076",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "seawoods_final",
+      "flow": "skills/choice-667076.flow.json",
+      "next": [
+        {
+          "caption": "User picked [got]",
+          "condition": "temp['skill-choice-ret'] == \"got\"",
+          "node": "End_Conversation"
+        },
+        {
+          "caption": "User picked [back2]",
+          "condition": "temp['skill-choice-ret'] == \"back2\"",
+          "node": "node-fc2b"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "node-f312"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "b0722dcdb8",
+      "name": "node-f312",
+      "next": [
+        {
+          "condition": "true",
+          "node": "seawoods_final"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null
+    },
+    {
+      "id": "03dcf1d056",
+      "name": "End_Conversation",
+      "next": [],
+      "onEnter": [],
+      "onReceive": null
+    },
+    {
+      "id": "8f72eb4330",
+      "name": "node-fc2b",
+      "next": [
+        {
+          "condition": "true",
+          "node": "Pick_one.flow.json"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null
+    }
+  ]
+}

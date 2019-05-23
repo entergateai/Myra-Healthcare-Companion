@@ -1,0 +1,84 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "next": []
+  },
+  "startNode": "entry",
+  "skillData": {
+    "contentId": "builtin_single-choice--ffydT",
+    "keywords": {
+      "got11": [
+        "got11",
+        "Got it !"
+      ],
+      "back11": [
+        "back11",
+        "I want to go back"
+      ]
+    },
+    "config": {}
+  },
+  "nodes": [
+    {
+      "name": "entry",
+      "onEnter": [
+        "say #!builtin_single-choice--ffydT {\"skill\":\"choice\"}"
+      ],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "167719"
+    },
+    {
+      "name": "parse",
+      "onReceive": [
+        "basic-skills/choice_parse_answer {\"contentId\":\"builtin_single-choice--ffydT\",\"keywords\":{\"got11\":[\"got11\",\"Got it !\"],\"back11\":[\"back11\",\"I want to go back\"]},\"config\":{}}"
+      ],
+      "next": [
+        {
+          "condition": "temp['skill-choice-valid'] === true",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "invalid"
+        }
+      ],
+      "onEnter": [],
+      "id": "315821"
+    },
+    {
+      "name": "invalid",
+      "onEnter": [
+        "basic-skills/choice_invalid_answer"
+      ],
+      "next": [
+        {
+          "condition": "temp['skill-choice-invalid-count'] <= undefined",
+          "node": "sorry"
+        },
+        {
+          "condition": "true",
+          "node": "#"
+        }
+      ],
+      "id": "676129"
+    },
+    {
+      "name": "sorry",
+      "onEnter": [
+        "say #!builtin_single-choice--ffydT {\"skill\":\"choice\"}"
+      ],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "714562"
+    }
+  ]
+}

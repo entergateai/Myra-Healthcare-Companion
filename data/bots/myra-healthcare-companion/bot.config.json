@@ -1,0 +1,52 @@
+{
+  "locked": false,
+  "disabled": false,
+  "private": false,
+  "details": {
+    "website": "http://entergateai.co",
+    "phoneNumber": "9082179076",
+    "emailAddress": "hello@entergateai.co",
+    "avatarUrl": "/api/v1/bots/myra-healthcare-companion/media/5n1kobvr6cfn2dczvaf9-Myra.jpg",
+    "coverPictureUrl": ""
+  },
+  "$schema": "../../bot.config.schema.json",
+  "description": "I am a Healthcare Bot. Just say Hi to start",
+  "active": true,
+  "version": "1.0.0",
+  "author": "Botpress, Inc.",
+  "license": "AGPL-3.0",
+  "imports": {
+    "modules": [],
+    "incomingMiddleware": [],
+    "outgoingMiddleware": [],
+    "contentTypes": [
+      "builtin_action-button",
+      "builtin_card",
+      "builtin_carousel",
+      "builtin_image",
+      "builtin_single-choice",
+      "builtin_text",
+      "dropdown"
+    ]
+  },
+  "dialog": {
+    "timeoutInterval": "5m"
+  },
+  "logs": {
+    "expiration": "1 week"
+  },
+  "defaultLanguage": "en",
+  "languages": [
+    "en"
+  ],
+  "id": "myra-healthcare-companion",
+  "name": "Myra",
+  "category": null,
+  "pipeline_status": {
+    "current_stage": {
+      "id": "prod",
+      "promoted_on": "2019-04-29T12:09:35.782Z",
+      "promoted_by": "entergate.ai@gmail.com"
+    }
+  }
+}

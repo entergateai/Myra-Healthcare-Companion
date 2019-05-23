@@ -1,0 +1,84 @@
+{
+  "version": "0.0.1",
+  "catchAll": {},
+  "startNode": "entry",
+  "nodes": [
+    {
+      "id": "ed5ba94116",
+      "name": "entry",
+      "onEnter": [
+        "say #!builtin_text-b6ojgN",
+        "say #!builtin_text-WD21wX"
+      ],
+      "onReceive": null,
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-820cbf"
+        }
+      ]
+    },
+    {
+      "id": "fd83afe29e",
+      "name": "node-5436",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-820cbf"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null
+    },
+    {
+      "id": "c45faadb47",
+      "name": "gogt",
+      "next": [
+        {
+          "condition": "true",
+          "node": "End.flow.json"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null
+    },
+    {
+      "id": "cc589db86d",
+      "name": "back",
+      "next": [
+        {
+          "condition": "true",
+          "node": "Pick_one.flow.json"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null
+    },
+    {
+      "id": "skill-820cbf",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-820cbf",
+      "flow": "skills/choice-820cbf.flow.json",
+      "next": [
+        {
+          "caption": "User picked [gotty17...]",
+          "condition": "temp['skill-choice-ret'] == \"gotty1766\"",
+          "node": "gogt"
+        },
+        {
+          "caption": "User picked [backss]",
+          "condition": "temp['skill-choice-ret'] == \"backss\"",
+          "node": "back"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "node-5436"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    }
+  ]
+}

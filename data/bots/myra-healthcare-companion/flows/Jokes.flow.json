@@ -1,0 +1,85 @@
+{
+  "version": "0.0.1",
+  "catchAll": {},
+  "startNode": "entry",
+  "nodes": [
+    {
+      "id": "c2c9cf62a2",
+      "name": "entry",
+      "onEnter": [
+        "say #!builtin_text-soOe3d"
+      ],
+      "onReceive": null,
+      "next": [
+        {
+          "condition": "true",
+          "node": "Jokes"
+        }
+      ]
+    },
+    {
+      "id": "5a5b46d903",
+      "name": "Jokes",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-333ff1"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-Qhqh9p"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "skill-333ff1",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-333ff1",
+      "flow": "skills/choice-333ff1.flow.json",
+      "next": [
+        {
+          "caption": "User picked [another]",
+          "condition": "temp['skill-choice-ret'] == \"another\"",
+          "node": "Jokes"
+        },
+        {
+          "caption": "User picked [main ch...]",
+          "condition": "temp['skill-choice-ret'] == \"main choice\"",
+          "node": "node-3c8a"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "node-5bda"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "86d6aa1315",
+      "name": "node-5bda",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-333ff1"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null
+    },
+    {
+      "id": "e22905ec11",
+      "name": "node-3c8a",
+      "next": [
+        {
+          "condition": "true",
+          "node": "Pick_one.flow.json"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null
+    }
+  ]
+}

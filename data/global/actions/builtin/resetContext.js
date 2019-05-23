@@ -1,0 +1,18 @@
+//CHECKSUM:5aeb3caa629cba093d86b4b6e91e216875201ecc7ab7d32f0a6ca008b301dfae
+"use strict";
+
+/**
+ * Resets the NLU context to the default scope.
+ *
+ * This method is contextual to the current user and chat session.
+ *
+ * @title Reset Context
+ * @category NLU
+ * @author Botpress, Inc.
+ */
+const resetContext = () => {
+  event.state.session.nluContexts = [];
+};
+
+return resetContext();
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInJlc2V0Q29udGV4dC5qcyJdLCJuYW1lcyI6WyJyZXNldENvbnRleHQiLCJldmVudCIsInN0YXRlIiwic2Vzc2lvbiIsIm5sdUNvbnRleHRzIl0sIm1hcHBpbmdzIjoiOztBQUFBOzs7Ozs7Ozs7QUFTQSxNQUFNQSxZQUFZLEdBQUcsTUFBTTtBQUN6QkMsRUFBQUEsS0FBSyxDQUFDQyxLQUFOLENBQVlDLE9BQVosQ0FBb0JDLFdBQXBCLEdBQWtDLEVBQWxDO0FBQ0QsQ0FGRDs7QUFJQSxPQUFPSixZQUFZLEVBQW5CIiwic291cmNlUm9vdCI6Ii92YXIvbGliL2plbmtpbnMvd29ya3NwYWNlL2J1aWxkLXdpbmRvd3MvbW9kdWxlcy9idWlsdGluL3NyYy9iYWNrZW5kIiwic291cmNlc0NvbnRlbnQiOlsiLyoqXG4gKiBSZXNldHMgdGhlIE5MVSBjb250ZXh0IHRvIHRoZSBkZWZhdWx0IHNjb3BlLlxuICpcbiAqIFRoaXMgbWV0aG9kIGlzIGNvbnRleHR1YWwgdG8gdGhlIGN1cnJlbnQgdXNlciBhbmQgY2hhdCBzZXNzaW9uLlxuICpcbiAqIEB0aXRsZSBSZXNldCBDb250ZXh0XG4gKiBAY2F0ZWdvcnkgTkxVXG4gKiBAYXV0aG9yIEJvdHByZXNzLCBJbmMuXG4gKi9cbmNvbnN0IHJlc2V0Q29udGV4dCA9ICgpID0+IHtcbiAgZXZlbnQuc3RhdGUuc2Vzc2lvbi5ubHVDb250ZXh0cyA9IFtdXG59XG5cbnJldHVybiByZXNldENvbnRleHQoKVxuIl19

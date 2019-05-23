@@ -1,0 +1,201 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "onReceive": [],
+    "next": []
+  },
+  "startNode": "entry",
+  "nodes": [
+    {
+      "id": "entry",
+      "name": "entry",
+      "next": [
+        {
+          "condition": "true",
+          "node": "Name"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-ke-l9Q",
+        "say #!builtin_text-BkWaJq",
+        "say #!builtin_text-YOW4iu"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "cf8381d238",
+      "name": "Name",
+      "next": [
+        {
+          "condition": "true",
+          "node": "great"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-yzlH0C"
+      ],
+      "onReceive": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"name\",\"value\":\"{{event.payload.text}}\"}",
+        "say #!builtin_text-52ZrYk"
+      ]
+    },
+    {
+      "id": "e084a957f4",
+      "name": "great",
+      "next": [
+        {
+          "condition": "true",
+          "node": "In_what_way"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-LYQ-21",
+        "say #!builtin_text-_91YCC"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "skill-964d5a",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "In_what_way",
+      "flow": "skills/choice-964d5a.flow.json",
+      "next": [
+        {
+          "caption": "User picked [way]",
+          "condition": "temp['skill-choice-ret'] == \"way\"",
+          "node": "way2"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "node-a453"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "d60a97fba8",
+      "name": "node-a453",
+      "next": [
+        {
+          "condition": "true",
+          "node": "In_what_way"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null
+    },
+    {
+      "id": "10804e7a6d",
+      "name": "way2",
+      "next": [
+        {
+          "condition": "true",
+          "node": "excellent"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-Xorqkk",
+        "say #!builtin_text--LpdDM",
+        "say #!builtin_text-RD__sH"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "skill-e0443b",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "excellent",
+      "flow": "skills/choice-e0443b.flow.json",
+      "next": [
+        {
+          "caption": "User picked [excel]",
+          "condition": "temp['skill-choice-ret'] == \"excel\"",
+          "node": "remember"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "node-fdb2"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "5422a184ac",
+      "name": "node-fdb2",
+      "next": [
+        {
+          "condition": "true",
+          "node": "excellent"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null
+    },
+    {
+      "id": "2925bdf6fa",
+      "name": "remember",
+      "next": [
+        {
+          "condition": "true",
+          "node": "perfect"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-lX6V1L",
+        "say #!builtin_text-W5JgwS",
+        "say #!builtin_text--WRAVU"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "skill-3ea9aa",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "perfect",
+      "flow": "skills/choice-3ea9aa.flow.json",
+      "next": [
+        {
+          "caption": "User picked [perfect]",
+          "condition": "temp['skill-choice-ret'] == \"perfect\"",
+          "node": "node-c13d"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "node-07e3"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "4a301e1f2f",
+      "name": "node-07e3",
+      "next": [
+        {
+          "condition": "true",
+          "node": "perfect"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null
+    },
+    {
+      "id": "4bf3f53645",
+      "name": "node-c13d",
+      "next": [
+        {
+          "condition": "true",
+          "node": "Pick_one.flow.json"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+[
+  {
+    "name": "Default",
+    "userSeq": 0,
+    "users": [
+      {
+        "email": "entergate.ai@gmail.com",
+        "password": "48f828a19835d9000a18c8f77a904401b5b0e0afd0c0e143414a76e728973530d76cb9a51ac9f3aca4020987fc1df815020f890cdb469c532631d1386a6639a4",
+        "salt": "fb4d805478d29179",
+        "last_ip": "::1",
+        "last_logon": "2019-05-22T12:45:20.000Z",
+        "created_on": "2019-04-29T12:09:19.611Z",
+        "role": "admin",
+        "unsuccessful_logins": 0,
+        "locked_out": false
+      }
+    ],
+    "bots": [
+      "myra-healthcare-companion"
+    ],
+    "roles": [
+      {
+        "id": "admin",
+        "name": "Administrator",
+        "description": "Administrators have full access to the workspace including adding members, creating bots and synchronizing changes.",
+        "rules": [
+          {
+            "res": "*",
+            "op": "+r+w"
+          }
+        ]
+      },
+      {
+        "id": "dev",
+        "name": "Developer",
+        "description": "Developers have full read/write access to bots, including flows, content, NLU and actions",
+        "rules": [
+          {
+            "res": "*",
+            "op": "+r+w"
+          },
+          {
+            "res": "admin.*",
+            "op": "+r-w"
+          },
+          {
+            "res": "admin.collaborators.*",
+            "op": "-r"
+          }
+        ]
+      },
+      {
+        "id": "editor",
+        "name": "Content Editor",
+        "description": "Content Editors have read/write access to content and NLU, and read-only access to flows and actions.",
+        "rules": [
+          {
+            "res": "*",
+            "op": "+r"
+          },
+          {
+            "res": "admin.collaborators.*",
+            "op": "-r"
+          }
+        ]
+      }
+    ],
+    "defaultRole": "dev",
+    "adminRole": "admin",
+    "pipeline": [
+      {
+        "id": "prod",
+        "label": "Production",
+        "action": "promote_copy"
+      }
+    ]
+  }
+]

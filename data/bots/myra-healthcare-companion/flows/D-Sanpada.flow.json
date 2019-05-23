@@ -1,0 +1,255 @@
+{
+  "version": "0.0.1",
+  "catchAll": {},
+  "startNode": "entry",
+  "nodes": [
+    {
+      "id": "b8eec3c82c",
+      "name": "entry",
+      "onEnter": [
+        "say #!builtin_text-DKRblq"
+      ],
+      "onReceive": null,
+      "next": [
+        {
+          "condition": "true",
+          "node": "type_of_doc"
+        }
+      ]
+    },
+    {
+      "id": "0921c42645",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "type_of_doc",
+      "flow": "skills/choice-07a9f4.flow.json",
+      "next": [
+        {
+          "caption": "User picked [gp]",
+          "condition": "temp['skill-choice-ret'] == \"gp\"",
+          "node": "GP"
+        },
+        {
+          "caption": "User picked [dentist]",
+          "condition": "temp['skill-choice-ret'] == \"dentist\"",
+          "node": "Dentist"
+        },
+        {
+          "caption": "User picked [ortho]",
+          "condition": "temp['skill-choice-ret'] == \"ortho\"",
+          "node": "Ortho"
+        },
+        {
+          "caption": "User picked [vet]",
+          "condition": "temp['skill-choice-ret'] == \"vet\"",
+          "node": "Vet"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "node-ea39"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "60079bf735",
+      "name": "node-ea39",
+      "next": [
+        {
+          "condition": "true",
+          "node": "type_of_doc"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null
+    },
+    {
+      "id": "4b5ee4c526",
+      "name": "GP",
+      "next": [
+        {
+          "condition": "true",
+          "node": "Kukreja_Clinic"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-DKRblq"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "aa3cdec28e",
+      "name": "Dentist",
+      "next": [
+        {
+          "condition": "true",
+          "node": "Suman_Dental_Clinic"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-DKRblq"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "24490d08b9",
+      "name": "Ortho",
+      "next": [
+        {
+          "condition": "true",
+          "node": "Dr._Rajesh_Badiyani"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-DKRblq"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "8656727ab0",
+      "name": "Vet",
+      "next": [
+        {
+          "condition": "true",
+          "node": "Shree_Pet_Care"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-DKRblq"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "6cd248109d",
+      "name": "Kukreja_Clinic",
+      "next": [
+        {
+          "condition": "true",
+          "node": "End_Sanpada"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-TG1Ten",
+        "say #!builtin_text-tlQ5tY",
+        "say #!builtin_text-rQ7OYA",
+        "say #!builtin_text-wxQrZh"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "c576a10e5e",
+      "name": "Suman_Dental_Clinic",
+      "next": [
+        {
+          "condition": "true",
+          "node": "End_Sanpada"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-i0hVmb",
+        "say #!builtin_text-DBMbq2",
+        "say #!builtin_text-7LP1r3",
+        "say #!builtin_text-N91ju-"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "85920b1aa3",
+      "name": "Shree_Pet_Care",
+      "next": [
+        {
+          "condition": "true",
+          "node": "End_Sanpada"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-HEiF7l",
+        "say #!builtin_text-R5Odrs",
+        "say #!builtin_text-GzdNgj",
+        "say #!builtin_text-9nMkQz"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "f4d711da87",
+      "name": "Dr._Rajesh_Badiyani",
+      "next": [
+        {
+          "condition": "true",
+          "node": "End_Sanpada"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-ZRGmbj",
+        "say #!builtin_text-vHuMod",
+        "say #!builtin_text-FQMIqz",
+        "say #!builtin_text-JtBj-P"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "skill-85678f",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "End_Sanpada",
+      "flow": "skills/choice-85678f.flow.json",
+      "next": [
+        {
+          "caption": "User picked [got11]",
+          "condition": "temp['skill-choice-ret'] == \"got11\"",
+          "node": "got11"
+        },
+        {
+          "caption": "User picked [back11]",
+          "condition": "temp['skill-choice-ret'] == \"back11\"",
+          "node": "node-adc7"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "node-53ca"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "a9556bccaa",
+      "name": "node-53ca",
+      "next": [
+        {
+          "condition": "true",
+          "node": "End_Sanpada"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null
+    },
+    {
+      "id": "336bef247f",
+      "name": "got11",
+      "next": [
+        {
+          "condition": "true",
+          "node": "End.flow.json"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null
+    },
+    {
+      "id": "ceb490b56e",
+      "name": "node-adc7",
+      "next": [
+        {
+          "condition": "true",
+          "node": "Pick_one.flow.json"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null
+    }
+  ]
+}

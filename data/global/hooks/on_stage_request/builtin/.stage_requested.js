@@ -1,0 +1,28 @@
+//CHECKSUM:24b91ba0019852c3458b50e3c8c779f458a8f04f30dc99bbe3c7a600b6f38589
+"use strict";
+
+/**
+ * This is called when a user requests to to promote abot to the next stage.
+ * You can set the current stage of the bot to the next one
+ *
+ * @param bp The botpress SDK
+ * @param bot The complete configuration of the bot
+ * @param users The list of users of that workspace (email, role)
+ * @param pipeline The list of configured stages
+ * @param hookResult The result of the hook which contains actions
+ */
+const stageChangeRequest = async () => {
+  const request_user = users.find(u => u.email == bot.pipeline_status.stage_request.requested_by);
+
+  if (!request_user || request_user.role !== 'admin.*') {
+    /*
+    we want to keep the bot in the current stage and until another user with the right role promotes it
+    here would go an api call to your 3rd party notification service
+    */
+    hookResult.actions = [];
+    return;
+  }
+};
+
+return stageChangeRequest();
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi5zdGFnZV9yZXF1ZXN0ZWQuanMiXSwibmFtZXMiOlsic3RhZ2VDaGFuZ2VSZXF1ZXN0IiwicmVxdWVzdF91c2VyIiwidXNlcnMiLCJmaW5kIiwidSIsImVtYWlsIiwiYm90IiwicGlwZWxpbmVfc3RhdHVzIiwic3RhZ2VfcmVxdWVzdCIsInJlcXVlc3RlZF9ieSIsInJvbGUiLCJob29rUmVzdWx0IiwiYWN0aW9ucyJdLCJtYXBwaW5ncyI6Ijs7QUFBQTs7Ozs7Ozs7OztBQVVBLE1BQU1BLGtCQUFrQixHQUFHLFlBQVk7QUFDckMsUUFBTUMsWUFBWSxHQUFHQyxLQUFLLENBQUNDLElBQU4sQ0FBV0MsQ0FBQyxJQUFJQSxDQUFDLENBQUNDLEtBQUYsSUFBV0MsR0FBRyxDQUFDQyxlQUFKLENBQW9CQyxhQUFwQixDQUFrQ0MsWUFBN0QsQ0FBckI7O0FBQ0EsTUFBSSxDQUFDUixZQUFELElBQWlCQSxZQUFZLENBQUNTLElBQWIsS0FBc0IsU0FBM0MsRUFBc0Q7QUFDcEQ7Ozs7QUFJQUMsSUFBQUEsVUFBVSxDQUFDQyxPQUFYLEdBQXFCLEVBQXJCO0FBQ0E7QUFDRDtBQUNGLENBVkQ7O0FBWUEsT0FBT1osa0JBQWtCLEVBQXpCIiwic291cmNlUm9vdCI6Ii92YXIvbGliL2plbmtpbnMvd29ya3NwYWNlL2J1aWxkLXdpbmRvd3MvbW9kdWxlcy9idWlsdGluL3NyYy9iYWNrZW5kIiwic291cmNlc0NvbnRlbnQiOlsiLyoqXG4gKiBUaGlzIGlzIGNhbGxlZCB3aGVuIGEgdXNlciByZXF1ZXN0cyB0byB0byBwcm9tb3RlIGFib3QgdG8gdGhlIG5leHQgc3RhZ2UuXG4gKiBZb3UgY2FuIHNldCB0aGUgY3VycmVudCBzdGFnZSBvZiB0aGUgYm90IHRvIHRoZSBuZXh0IG9uZVxuICpcbiAqIEBwYXJhbSBicCBUaGUgYm90cHJlc3MgU0RLXG4gKiBAcGFyYW0gYm90IFRoZSBjb21wbGV0ZSBjb25maWd1cmF0aW9uIG9mIHRoZSBib3RcbiAqIEBwYXJhbSB1c2VycyBUaGUgbGlzdCBvZiB1c2VycyBvZiB0aGF0IHdvcmtzcGFjZSAoZW1haWwsIHJvbGUpXG4gKiBAcGFyYW0gcGlwZWxpbmUgVGhlIGxpc3Qgb2YgY29uZmlndXJlZCBzdGFnZXNcbiAqIEBwYXJhbSBob29rUmVzdWx0IFRoZSByZXN1bHQgb2YgdGhlIGhvb2sgd2hpY2ggY29udGFpbnMgYWN0aW9uc1xuICovXG5jb25zdCBzdGFnZUNoYW5nZVJlcXVlc3QgPSBhc3luYyAoKSA9PiB7XG4gIGNvbnN0IHJlcXVlc3RfdXNlciA9IHVzZXJzLmZpbmQodSA9PiB1LmVtYWlsID09IGJvdC5waXBlbGluZV9zdGF0dXMuc3RhZ2VfcmVxdWVzdC5yZXF1ZXN0ZWRfYnkpXG4gIGlmICghcmVxdWVzdF91c2VyIHx8IHJlcXVlc3RfdXNlci5yb2xlICE9PSAnYWRtaW4uKicpIHtcbiAgICAvKlxuICAgIHdlIHdhbnQgdG8ga2VlcCB0aGUgYm90IGluIHRoZSBjdXJyZW50IHN0YWdlIGFuZCB1bnRpbCBhbm90aGVyIHVzZXIgd2l0aCB0aGUgcmlnaHQgcm9sZSBwcm9tb3RlcyBpdFxuICAgIGhlcmUgd291bGQgZ28gYW4gYXBpIGNhbGwgdG8geW91ciAzcmQgcGFydHkgbm90aWZpY2F0aW9uIHNlcnZpY2VcbiAgICAqL1xuICAgIGhvb2tSZXN1bHQuYWN0aW9ucyA9IFtdXG4gICAgcmV0dXJuXG4gIH1cbn1cblxucmV0dXJuIHN0YWdlQ2hhbmdlUmVxdWVzdCgpXG4iXX0=

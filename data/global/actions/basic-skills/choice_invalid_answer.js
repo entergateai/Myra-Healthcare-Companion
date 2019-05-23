@@ -1,0 +1,17 @@
+//CHECKSUM:4fbdce9ff77dee80af29305b12197150b403e647c6acf3be571ce96d4133f604
+'use strict';
+
+const _ = require('lodash');
+/**
+ * @hidden true
+ */
+
+
+const invalidAnswer = async () => {
+  const key = 'skill-choice-invalid-count';
+  const value = (temp[key] || 0) + 1;
+  temp[key] = value;
+};
+
+return invalidAnswer();
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNob2ljZV9pbnZhbGlkX2Fuc3dlci5qcyJdLCJuYW1lcyI6WyJfIiwicmVxdWlyZSIsImludmFsaWRBbnN3ZXIiLCJrZXkiLCJ2YWx1ZSIsInRlbXAiXSwibWFwcGluZ3MiOiJBQUFBOztBQUNBLE1BQU1BLENBQUMsR0FBR0MsT0FBTyxDQUFDLFFBQUQsQ0FBakI7QUFFQTs7Ozs7QUFHQSxNQUFNQyxhQUFhLEdBQUcsWUFBWTtBQUNoQyxRQUFNQyxHQUFHLEdBQUcsNEJBQVo7QUFDQSxRQUFNQyxLQUFLLEdBQUcsQ0FBQ0MsSUFBSSxDQUFDRixHQUFELENBQUosSUFBYSxDQUFkLElBQW1CLENBQWpDO0FBRUFFLEVBQUFBLElBQUksQ0FBQ0YsR0FBRCxDQUFKLEdBQVlDLEtBQVo7QUFDRCxDQUxEOztBQU9BLE9BQU9GLGFBQWEsRUFBcEIiLCJzb3VyY2VSb290IjoiL3Zhci9saWIvamVua2lucy93b3Jrc3BhY2UvYnVpbGQtd2luZG93cy9tb2R1bGVzL2Jhc2ljLXNraWxscy9zcmMvYmFja2VuZCIsInNvdXJjZXNDb250ZW50IjpbIid1c2Ugc3RyaWN0J1xuY29uc3QgXyA9IHJlcXVpcmUoJ2xvZGFzaCcpXG5cbi8qKlxuICogQGhpZGRlbiB0cnVlXG4gKi9cbmNvbnN0IGludmFsaWRBbnN3ZXIgPSBhc3luYyAoKSA9PiB7XG4gIGNvbnN0IGtleSA9ICdza2lsbC1jaG9pY2UtaW52YWxpZC1jb3VudCdcbiAgY29uc3QgdmFsdWUgPSAodGVtcFtrZXldIHx8IDApICsgMVxuXG4gIHRlbXBba2V5XSA9IHZhbHVlXG59XG5cbnJldHVybiBpbnZhbGlkQW5zd2VyKClcbiJdfQ==

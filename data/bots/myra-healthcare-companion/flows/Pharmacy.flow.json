@@ -1,0 +1,152 @@
+{
+  "version": "0.0.1",
+  "catchAll": {},
+  "startNode": "entry",
+  "nodes": [
+    {
+      "id": "04be905553",
+      "name": "entry",
+      "onEnter": [
+        "say #!builtin_text-XgKzJF",
+        "say #!builtin_text-XqtlIv"
+      ],
+      "onReceive": null,
+      "next": [
+        {
+          "condition": "true",
+          "node": "areas"
+        }
+      ]
+    },
+    {
+      "id": "4a48278e5a",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "areas",
+      "flow": "skills/choice-5c1b1b.flow.json",
+      "next": [
+        {
+          "caption": "User picked [belapur]",
+          "condition": "temp['skill-choice-ret'] == \"belapur\"",
+          "node": "Belapur"
+        },
+        {
+          "caption": "User picked [nerul]",
+          "condition": "temp['skill-choice-ret'] == \"nerul\"",
+          "node": "Nerul"
+        },
+        {
+          "caption": "User picked [seawoods]",
+          "condition": "temp['skill-choice-ret'] == \"seawoods\"",
+          "node": "Seawoods"
+        },
+        {
+          "caption": "User picked [sanpada]",
+          "condition": "temp['skill-choice-ret'] == \"sanpada\"",
+          "node": "Sanpada"
+        },
+        {
+          "caption": "User picked [vashi]",
+          "condition": "temp['skill-choice-ret'] == \"vashi\"",
+          "node": "Vashi"
+        },
+        {
+          "caption": "User picked [ghansoli]",
+          "condition": "temp['skill-choice-ret'] == \"ghansoli\"",
+          "node": "Ghansoli"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "node-06dc"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "1b787c4cec",
+      "name": "node-06dc",
+      "next": [
+        {
+          "condition": "true",
+          "node": "areas"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null
+    },
+    {
+      "id": "276274b486",
+      "name": "Belapur",
+      "next": [
+        {
+          "condition": "true",
+          "node": "P-Belapur.flow.json"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null
+    },
+    {
+      "id": "c85a8d85d3",
+      "name": "Nerul",
+      "next": [
+        {
+          "condition": "true",
+          "node": "P-Nerul.flow.json"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null
+    },
+    {
+      "id": "74ad4f89b4",
+      "name": "Seawoods",
+      "next": [
+        {
+          "condition": "true",
+          "node": "P-Seawoods.flow.json"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null
+    },
+    {
+      "id": "25f7eb539a",
+      "name": "Sanpada",
+      "next": [
+        {
+          "condition": "true",
+          "node": "P-Sanpada.flow.json"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null
+    },
+    {
+      "id": "7c40cb3420",
+      "name": "Vashi",
+      "next": [
+        {
+          "condition": "true",
+          "node": "P-Vashi.flow.json"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null
+    },
+    {
+      "id": "542a67f874",
+      "name": "Ghansoli",
+      "next": [
+        {
+          "condition": "true",
+          "node": "P-Ghansoli.flow.json"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null
+    }
+  ]
+}

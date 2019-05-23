@@ -1,0 +1,155 @@
+{
+  "version": "0.0.1",
+  "catchAll": {},
+  "startNode": "entry",
+  "nodes": [
+    {
+      "id": "9ed5ecf692",
+      "name": "entry",
+      "onEnter": [
+        "say #!builtin_text-WMpiqI"
+      ],
+      "onReceive": null,
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-c92a0e"
+        }
+      ]
+    },
+    {
+      "id": "a7c82fee4c",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "final_choice",
+      "flow": "skills/choice-c0547b.flow.json",
+      "next": [
+        {
+          "caption": "User picked [got9]",
+          "condition": "temp['skill-choice-ret'] == \"got9\"",
+          "node": "end_final"
+        },
+        {
+          "caption": "User picked [back9]",
+          "condition": "temp['skill-choice-ret'] == \"back9\"",
+          "node": "pick_one"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "fail"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "1d6e8f0a58",
+      "name": "fail",
+      "next": [
+        {
+          "condition": "true",
+          "node": "final_choice"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null
+    },
+    {
+      "id": "92401a5866",
+      "name": "end_final",
+      "next": [
+        {
+          "condition": "true",
+          "node": "End.flow.json"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null
+    },
+    {
+      "id": "6b665ee970",
+      "name": "pick_one",
+      "next": [
+        {
+          "condition": "true",
+          "node": "Pick_one.flow.json"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null
+    },
+    {
+      "id": "skill-c92a0e",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-c92a0e",
+      "flow": "skills/choice-c92a0e.flow.json",
+      "next": [
+        {
+          "caption": "User picked [nereast]",
+          "condition": "temp['skill-choice-ret'] == \"nereast\"",
+          "node": "nerul_east"
+        },
+        {
+          "caption": "User picked [nerwest]",
+          "condition": "temp['skill-choice-ret'] == \"nerwest\"",
+          "node": "Nerul_West"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "node-1ba9"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "866106c8d8",
+      "name": "node-1ba9",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-c92a0e"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null
+    },
+    {
+      "id": "d1cbebf72f",
+      "name": "nerul_east",
+      "next": [
+        {
+          "condition": "true",
+          "node": "final_choice"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-A8QAVM",
+        "say #!builtin_text-i3U_SD",
+        "say #!builtin_text-JWwpcT",
+        "say #!builtin_text-hFvAiW"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "92407363d1",
+      "name": "Nerul_West",
+      "next": [
+        {
+          "condition": "true",
+          "node": "final_choice"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-DncKau",
+        "say #!builtin_text-rexLfe",
+        "say #!builtin_text-sh2q14",
+        "say #!builtin_text-_q0zK2"
+      ],
+      "onReceive": null
+    }
+  ]
+}

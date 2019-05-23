@@ -1,0 +1,29 @@
+//CHECKSUM:e0dc8004c111a906be1a168304c4a73041d4271b18e1c8307787df3b997624fc
+"use strict";
+
+/**
+ * Store data to desired storage based on the time to live expectation. Read the
+ * documentation for more details
+ *
+ * @title Set Variable
+ * @category Storage
+ * @author Botpress, Inc.
+ * @param {string} type - Pick between: user, session, temp, bot
+ * @param {string} name - The name of the variable
+ * @param {any} value - Set the value of the variable. Type 'null' or leave empty to erase it.
+ */
+const setVariable = async (type, name, value) => {
+  if (type === 'bot') {
+    const original = await bp.kvs.get(event.botId, 'global');
+    await bp.kvs.set(event.botId, 'global', { ...original,
+      [name]: value
+    });
+  } else if (value === 'null' || value === '' || typeof value === 'undefined') {
+    delete event.state[type][name];
+  } else {
+    event.state[type][name] = value;
+  }
+};
+
+return setVariable(args.type, args.name, args.value);
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNldFZhcmlhYmxlLmpzIl0sIm5hbWVzIjpbInNldFZhcmlhYmxlIiwidHlwZSIsIm5hbWUiLCJ2YWx1ZSIsIm9yaWdpbmFsIiwiYnAiLCJrdnMiLCJnZXQiLCJldmVudCIsImJvdElkIiwic2V0Iiwic3RhdGUiLCJhcmdzIl0sIm1hcHBpbmdzIjoiOztBQUFBOzs7Ozs7Ozs7OztBQVdBLE1BQU1BLFdBQVcsR0FBRyxPQUFPQyxJQUFQLEVBQWFDLElBQWIsRUFBbUJDLEtBQW5CLEtBQTZCO0FBQy9DLE1BQUlGLElBQUksS0FBSyxLQUFiLEVBQW9CO0FBQ2xCLFVBQU1HLFFBQVEsR0FBRyxNQUFNQyxFQUFFLENBQUNDLEdBQUgsQ0FBT0MsR0FBUCxDQUFXQyxLQUFLLENBQUNDLEtBQWpCLEVBQXdCLFFBQXhCLENBQXZCO0FBQ0EsVUFBTUosRUFBRSxDQUFDQyxHQUFILENBQU9JLEdBQVAsQ0FBV0YsS0FBSyxDQUFDQyxLQUFqQixFQUF3QixRQUF4QixFQUFrQyxFQUFFLEdBQUdMLFFBQUw7QUFBZSxPQUFDRixJQUFELEdBQVFDO0FBQXZCLEtBQWxDLENBQU47QUFDRCxHQUhELE1BR08sSUFBSUEsS0FBSyxLQUFLLE1BQVYsSUFBb0JBLEtBQUssS0FBSyxFQUE5QixJQUFvQyxPQUFPQSxLQUFQLEtBQWlCLFdBQXpELEVBQXNFO0FBQzNFLFdBQU9LLEtBQUssQ0FBQ0csS0FBTixDQUFZVixJQUFaLEVBQWtCQyxJQUFsQixDQUFQO0FBQ0QsR0FGTSxNQUVBO0FBQ0xNLElBQUFBLEtBQUssQ0FBQ0csS0FBTixDQUFZVixJQUFaLEVBQWtCQyxJQUFsQixJQUEwQkMsS0FBMUI7QUFDRDtBQUNGLENBVEQ7O0FBV0EsT0FBT0gsV0FBVyxDQUFDWSxJQUFJLENBQUNYLElBQU4sRUFBWVcsSUFBSSxDQUFDVixJQUFqQixFQUF1QlUsSUFBSSxDQUFDVCxLQUE1QixDQUFsQiIsInNvdXJjZVJvb3QiOiIvdmFyL2xpYi9qZW5raW5zL3dvcmtzcGFjZS9idWlsZC13aW5kb3dzL21vZHVsZXMvYnVpbHRpbi9zcmMvYmFja2VuZCIsInNvdXJjZXNDb250ZW50IjpbIi8qKlxuICogU3RvcmUgZGF0YSB0byBkZXNpcmVkIHN0b3JhZ2UgYmFzZWQgb24gdGhlIHRpbWUgdG8gbGl2ZSBleHBlY3RhdGlvbi4gUmVhZCB0aGVcbiAqIGRvY3VtZW50YXRpb24gZm9yIG1vcmUgZGV0YWlsc1xuICpcbiAqIEB0aXRsZSBTZXQgVmFyaWFibGVcbiAqIEBjYXRlZ29yeSBTdG9yYWdlXG4gKiBAYXV0aG9yIEJvdHByZXNzLCBJbmMuXG4gKiBAcGFyYW0ge3N0cmluZ30gdHlwZSAtIFBpY2sgYmV0d2VlbjogdXNlciwgc2Vzc2lvbiwgdGVtcCwgYm90XG4gKiBAcGFyYW0ge3N0cmluZ30gbmFtZSAtIFRoZSBuYW1lIG9mIHRoZSB2YXJpYWJsZVxuICogQHBhcmFtIHthbnl9IHZhbHVlIC0gU2V0IHRoZSB2YWx1ZSBvZiB0aGUgdmFyaWFibGUuIFR5cGUgJ251bGwnIG9yIGxlYXZlIGVtcHR5IHRvIGVyYXNlIGl0LlxuICovXG5jb25zdCBzZXRWYXJpYWJsZSA9IGFzeW5jICh0eXBlLCBuYW1lLCB2YWx1ZSkgPT4ge1xuICBpZiAodHlwZSA9PT0gJ2JvdCcpIHtcbiAgICBjb25zdCBvcmlnaW5hbCA9IGF3YWl0IGJwLmt2cy5nZXQoZXZlbnQuYm90SWQsICdnbG9iYWwnKVxuICAgIGF3YWl0IGJwLmt2cy5zZXQoZXZlbnQuYm90SWQsICdnbG9iYWwnLCB7IC4uLm9yaWdpbmFsLCBbbmFtZV06IHZhbHVlIH0pXG4gIH0gZWxzZSBpZiAodmFsdWUgPT09ICdudWxsJyB8fCB2YWx1ZSA9PT0gJycgfHwgdHlwZW9mIHZhbHVlID09PSAndW5kZWZpbmVkJykge1xuICAgIGRlbGV0ZSBldmVudC5zdGF0ZVt0eXBlXVtuYW1lXVxuICB9IGVsc2Uge1xuICAgIGV2ZW50LnN0YXRlW3R5cGVdW25hbWVdID0gdmFsdWVcbiAgfVxufVxuXG5yZXR1cm4gc2V0VmFyaWFibGUoYXJncy50eXBlLCBhcmdzLm5hbWUsIGFyZ3MudmFsdWUpXG4iXX0=

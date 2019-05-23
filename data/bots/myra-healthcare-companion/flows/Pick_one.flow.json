@@ -1,0 +1,140 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "next": [],
+    "onReceive": []
+  },
+  "startNode": "entry",
+  "nodes": [
+    {
+      "id": "0ae05503e0",
+      "name": "entry",
+      "next": [
+        {
+          "condition": "true",
+          "node": "Pick_one"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null
+    },
+    {
+      "id": "7a1cddf985",
+      "name": "Pick_one",
+      "next": [
+        {
+          "condition": "true",
+          "node": "Main_menu"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-pSGx-r"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "e8bfe334dc",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "Main_menu",
+      "flow": "skills/choice-ab1542.flow.json",
+      "next": [
+        {
+          "caption": "User picked [doctor]",
+          "condition": "temp['skill-choice-ret'] == \"doctor\"",
+          "node": "Doctor"
+        },
+        {
+          "caption": "User picked [pharmacy]",
+          "condition": "temp['skill-choice-ret'] == \"pharmacy\"",
+          "node": "Pharmacy"
+        },
+        {
+          "caption": "User picked [joke]",
+          "condition": "temp['skill-choice-ret'] == \"joke\"",
+          "node": "Joke"
+        },
+        {
+          "caption": "User picked [facts]",
+          "condition": "temp['skill-choice-ret'] == \"facts\"",
+          "node": "Fact"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "node-7500"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "7842d73317",
+      "name": "node-7500",
+      "next": [
+        {
+          "condition": "true",
+          "node": "Main_menu"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null
+    },
+    {
+      "id": "c7913a2387",
+      "name": "Doctor",
+      "next": [
+        {
+          "condition": "true",
+          "node": "Doctors.flow.json"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-uhuAJn"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "ff27c9bee8",
+      "name": "Pharmacy",
+      "next": [
+        {
+          "condition": "true",
+          "node": "Pharmacy.flow.json"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-uhuAJn"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "f349a59885",
+      "name": "Joke",
+      "next": [
+        {
+          "condition": "true",
+          "node": "Jokes.flow.json"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-uhuAJn"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "50a3499795",
+      "name": "Fact",
+      "next": [
+        {
+          "condition": "true",
+          "node": "Facts.flow.json"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-uhuAJn"
+      ],
+      "onReceive": null
+    }
+  ]
+}

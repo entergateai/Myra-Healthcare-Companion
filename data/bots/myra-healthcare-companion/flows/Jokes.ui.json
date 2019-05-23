@@ -1,0 +1,131 @@
+{
+  "nodes": [
+    {
+      "id": "c2c9cf62a2",
+      "position": {
+        "x": 315,
+        "y": 115
+      }
+    },
+    {
+      "id": "5a5b46d903",
+      "position": {
+        "x": 340,
+        "y": 290
+      }
+    },
+    {
+      "id": "skill-333ff1",
+      "position": {
+        "x": 335,
+        "y": 460
+      }
+    },
+    {
+      "id": "86d6aa1315",
+      "position": {
+        "x": 700,
+        "y": 470
+      }
+    },
+    {
+      "id": "e22905ec11",
+      "position": {
+        "x": 759,
+        "y": 595.0208282470703
+      }
+    }
+  ],
+  "links": [
+    {
+      "source": "c2c9cf62a2",
+      "sourcePort": "out0",
+      "target": "5a5b46d903",
+      "points": [
+        {
+          "x": 522,
+          "y": 192
+        },
+        {
+          "x": 441,
+          "y": 284
+        }
+      ]
+    },
+    {
+      "source": "5a5b46d903",
+      "sourcePort": "out0",
+      "target": "skill-333ff1",
+      "points": [
+        {
+          "x": 547,
+          "y": 404
+        },
+        {
+          "x": 436,
+          "y": 454
+        }
+      ]
+    },
+    {
+      "source": "skill-333ff1",
+      "sourcePort": "out0",
+      "target": "5a5b46d903",
+      "points": [
+        {
+          "x": 542,
+          "y": 509
+        },
+        {
+          "x": 441,
+          "y": 284
+        }
+      ]
+    },
+    {
+      "source": "skill-333ff1",
+      "sourcePort": "out1",
+      "target": "e22905ec11",
+      "points": [
+        {
+          "x": 542,
+          "y": 534
+        },
+        {
+          "x": 859,
+          "y": 589
+        }
+      ]
+    },
+    {
+      "source": "skill-333ff1",
+      "sourcePort": "out2",
+      "target": "86d6aa1315",
+      "points": [
+        {
+          "x": 542,
+          "y": 558
+        },
+        {
+          "x": 801,
+          "y": 464
+        }
+      ]
+    },
+    {
+      "source": "86d6aa1315",
+      "sourcePort": "out0",
+      "target": "skill-333ff1",
+      "points": [
+        {
+          "x": 907,
+          "y": 506
+        },
+        {
+          "x": 436,
+          "y": 454
+        }
+      ]
+    }
+  ]
+}

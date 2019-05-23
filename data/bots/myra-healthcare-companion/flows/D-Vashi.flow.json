@@ -1,0 +1,310 @@
+{
+  "version": "0.0.1",
+  "catchAll": {},
+  "startNode": "entry",
+  "nodes": [
+    {
+      "id": "196492fbc7",
+      "name": "entry",
+      "onEnter": [
+        "say #!builtin_text-DKRblq"
+      ],
+      "onReceive": null,
+      "next": [
+        {
+          "condition": "true",
+          "node": "type_of_doc"
+        }
+      ]
+    },
+    {
+      "id": "28020af656",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "type_of_doc",
+      "flow": "skills/choice-07a9f4.flow.json",
+      "next": [
+        {
+          "caption": "User picked [gp]",
+          "condition": "temp['skill-choice-ret'] == \"gp\"",
+          "node": "GP"
+        },
+        {
+          "caption": "User picked [dentist]",
+          "condition": "temp['skill-choice-ret'] == \"dentist\"",
+          "node": "Dentist"
+        },
+        {
+          "caption": "User picked [ortho]",
+          "condition": "temp['skill-choice-ret'] == \"ortho\"",
+          "node": "Ortho"
+        },
+        {
+          "caption": "User picked [vet]",
+          "condition": "temp['skill-choice-ret'] == \"vet\"",
+          "node": "Vet"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "node-ea39"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "730aa68964",
+      "name": "node-ea39",
+      "next": [
+        {
+          "condition": "true",
+          "node": "type_of_doc"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null
+    },
+    {
+      "id": "c3dd44ab02",
+      "name": "GP",
+      "next": [
+        {
+          "condition": "true",
+          "node": "GP_Vashi"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-g13LLW"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "bef947a74d",
+      "name": "Dentist",
+      "next": [
+        {
+          "condition": "true",
+          "node": "Dr._Pankaj_Mehta"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-DKRblq"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "8754305e33",
+      "name": "Ortho",
+      "next": [
+        {
+          "condition": "true",
+          "node": "Dr._kunal_Makhija"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-DKRblq"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "a959e2226b",
+      "name": "Vet",
+      "next": [
+        {
+          "condition": "true",
+          "node": "Navi_Mumbai_Veterinary_Clinic"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-DKRblq"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "skill-fe7d7c",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "GP_Vashi",
+      "flow": "skills/choice-fe7d7c.flow.json",
+      "next": [
+        {
+          "caption": "User picked [gpvashi1]",
+          "condition": "temp['skill-choice-ret'] == \"gpvashi1\"",
+          "node": "Dr._N.K._Upadhyay"
+        },
+        {
+          "caption": "User picked [gpvashi2]",
+          "condition": "temp['skill-choice-ret'] == \"gpvashi2\"",
+          "node": "Dr._Sanjay_Asgekar"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "node-c0b1"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "82cec70e03",
+      "name": "node-c0b1",
+      "next": [
+        {
+          "condition": "true",
+          "node": "GP_Vashi"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null
+    },
+    {
+      "id": "90ad1ba309",
+      "name": "Dr._N.K._Upadhyay",
+      "next": [
+        {
+          "condition": "true",
+          "node": "end_vashi"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-5i-EHb",
+        "say #!builtin_text-S40y40",
+        "say #!builtin_text-zO2ZZz",
+        "say #!builtin_text-w8Xj9D"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "15de31a1ef",
+      "name": "Dr._Sanjay_Asgekar",
+      "next": [
+        {
+          "condition": "true",
+          "node": "end_vashi"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-KFkwu5",
+        "say #!builtin_text-6Xm7rJ",
+        "say #!builtin_text-IJ-woy",
+        "say #!builtin_text-QEfaBL"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "a8b36ca153",
+      "name": "Dr._Pankaj_Mehta",
+      "next": [
+        {
+          "condition": "true",
+          "node": "end_vashi"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-r1vvts",
+        "say #!builtin_text-elBNKY",
+        "say #!builtin_text-axL184",
+        "say #!builtin_text-wpQ1Ct"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "910e536771",
+      "name": "Navi_Mumbai_Veterinary_Clinic",
+      "next": [
+        {
+          "condition": "true",
+          "node": "end_vashi"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-J1XS7v",
+        "say #!builtin_text-pYho6J",
+        "say #!builtin_text-RNUX77",
+        "say #!builtin_text-1xAWT9"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "ae5175862f",
+      "name": "Dr._kunal_Makhija",
+      "next": [
+        {
+          "condition": "true",
+          "node": "end_vashi"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-VlXciZ",
+        "say #!builtin_text-oKchvr",
+        "say #!builtin_text-Xz-q6t",
+        "say #!builtin_text--T802R"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "218c0954f1",
+      "name": "node-2e3f",
+      "next": [
+        {
+          "condition": "true",
+          "node": "end_vashi"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null
+    },
+    {
+      "id": "skill-17fea7",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "end_vashi",
+      "flow": "skills/choice-17fea7.flow.json",
+      "next": [
+        {
+          "caption": "User picked [got11]",
+          "condition": "temp['skill-choice-ret'] == \"got11\"",
+          "node": "node-ee8b"
+        },
+        {
+          "caption": "User picked [back13]",
+          "condition": "temp['skill-choice-ret'] == \"back13\"",
+          "node": "node-fa88"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "node-2e3f"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "e4dce98f27",
+      "name": "node-ee8b",
+      "next": [
+        {
+          "condition": "true",
+          "node": "End.flow.json"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null
+    },
+    {
+      "id": "85862bdf97",
+      "name": "node-fa88",
+      "next": [
+        {
+          "condition": "true",
+          "node": "Pick_one.flow.json"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null
+    }
+  ]
+}

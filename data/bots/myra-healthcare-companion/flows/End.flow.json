@@ -1,0 +1,186 @@
+{
+  "version": "0.0.1",
+  "catchAll": {},
+  "startNode": "entry",
+  "nodes": [
+    {
+      "id": "2fc1e5933e",
+      "name": "entry",
+      "onEnter": [
+        "say #!builtin_text-FsKtFR",
+        "say #!builtin_text-1G8Urs"
+      ],
+      "onReceive": null,
+      "next": [
+        {
+          "condition": "true",
+          "node": "about_choice"
+        }
+      ]
+    },
+    {
+      "id": "skill-f26945",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "about_choice",
+      "flow": "skills/choice-f26945.flow.json",
+      "next": [
+        {
+          "caption": "User picked [yes]",
+          "condition": "temp['skill-choice-ret'] == \"yes\"",
+          "node": "About_us"
+        },
+        {
+          "caption": "User picked [maybe]",
+          "condition": "temp['skill-choice-ret'] == \"maybe\"",
+          "node": "node-6f7c"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "node-932f"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "73e994b890",
+      "name": "node-932f",
+      "next": [
+        {
+          "condition": "true",
+          "node": "about_choice"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null
+    },
+    {
+      "id": "c89e502906",
+      "name": "About_us",
+      "next": [
+        {
+          "condition": "true",
+          "node": "survey1"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-qi1coG",
+        "say #!builtin_text-RVyBKf",
+        "say #!builtin_text-w3jn5h"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "4414316648",
+      "name": "node-6f7c",
+      "next": [
+        {
+          "condition": "true",
+          "node": "survey1"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-kj7-U5"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "8c27042de2",
+      "name": "survey1",
+      "next": [
+        {
+          "condition": "true",
+          "node": "Survey2"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-8KCPCL",
+        "say #!builtin_text-Yv06hG"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "skill-64d9d6",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "Survey2",
+      "flow": "skills/choice-64d9d6.flow.json",
+      "next": [
+        {
+          "caption": "User picked [sure]",
+          "condition": "temp['skill-choice-ret'] == \"sure\"",
+          "node": "Survey_3"
+        },
+        {
+          "caption": "User picked [no]",
+          "condition": "temp['skill-choice-ret'] == \"no\"",
+          "node": "node-57cb"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "node-3db2"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "8f743735dd",
+      "name": "node-3db2",
+      "next": [
+        {
+          "condition": "true",
+          "node": "Survey2"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null
+    },
+    {
+      "id": "eb185bad6e",
+      "name": "Survey_3",
+      "next": [
+        {
+          "condition": "true",
+          "node": "Thank_you"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-CzbqGT",
+        "say #!builtin_text-DmrQy2"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "2bdf82baa1",
+      "name": "node-57cb",
+      "next": [
+        {
+          "condition": "true",
+          "node": "Thank_you"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-kj7-U5"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "e289887e57",
+      "name": "Thank_you",
+      "next": [
+        {
+          "condition": "true",
+          "node": "END"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-1H8Gnn"
+      ],
+      "onReceive": null
+    }
+  ]
+}

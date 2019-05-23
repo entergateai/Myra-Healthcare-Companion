@@ -1,0 +1,174 @@
+{
+  "version": "0.0.1",
+  "catchAll": {},
+  "startNode": "entry",
+  "nodes": [
+    {
+      "id": "e10cd06d5f",
+      "name": "entry",
+      "onEnter": [
+        "say #!builtin_text-ow6fzW"
+      ],
+      "onReceive": null,
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-4f4c79"
+        }
+      ]
+    },
+    {
+      "id": "skill-4f4c79",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-4f4c79",
+      "flow": "skills/choice-4f4c79.flow.json",
+      "next": [
+        {
+          "caption": "User picked [fun]",
+          "condition": "temp['skill-choice-ret'] == \"fun\"",
+          "node": "Fun_facts"
+        },
+        {
+          "caption": "User picked [Med]",
+          "condition": "temp['skill-choice-ret'] == \"Med\"",
+          "node": "Med_facts"
+        },
+        {
+          "caption": "User picked [abootus]",
+          "condition": "temp['skill-choice-ret'] == \"abootus\"",
+          "node": "About_us"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "node-9520"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "a1402636e0",
+      "name": "node-9520",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-4f4c79"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null
+    },
+    {
+      "id": "dae96746cf",
+      "name": "Fun_facts",
+      "next": [
+        {
+          "condition": "true",
+          "node": "endchoice"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-PPRsZw"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "cac082b9e7",
+      "name": "Med_facts",
+      "next": [
+        {
+          "condition": "true",
+          "node": "endchoice"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-29Xjqm"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "ea3ce62338",
+      "name": "About_us",
+      "next": [
+        {
+          "condition": "true",
+          "node": "endchoice"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-WaArNo",
+        "say #!builtin_text-JmDsuw"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "f70afdf661",
+      "name": "Endfact",
+      "next": [
+        {
+          "condition": "true",
+          "node": "End.flow.json"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null
+    },
+    {
+      "id": "skill-838e59",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "endchoice",
+      "flow": "skills/choice-838e59.flow.json",
+      "next": [
+        {
+          "caption": "User picked [onemore]",
+          "condition": "temp['skill-choice-ret'] == \"onemore\"",
+          "node": "choice-4f4c79"
+        },
+        {
+          "caption": "User picked [back5]",
+          "condition": "temp['skill-choice-ret'] == \"back5\"",
+          "node": "node-bddd"
+        },
+        {
+          "caption": "User picked [endconvo]",
+          "condition": "temp['skill-choice-ret'] == \"endconvo\"",
+          "node": "Endfact"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "node-dad6"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "c2d98742ff",
+      "name": "node-dad6",
+      "next": [
+        {
+          "condition": "true",
+          "node": "endchoice"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null
+    },
+    {
+      "id": "4ba654da25",
+      "name": "node-bddd",
+      "next": [
+        {
+          "condition": "true",
+          "node": "Pick_one.flow.json"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null
+    }
+  ]
+}
